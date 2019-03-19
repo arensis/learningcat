@@ -1,7 +1,7 @@
 theme = "hugo-theme-learn"
-baseURL = "https://arensis.github.io/catlearning"
+baseURL = "https://arensis.github.io/learningcat"
 languageCode = "en-us"
-title = "Cat Learning"
+title = "Learning Cat"
 
 [params]
   themeVariant = "blue"
