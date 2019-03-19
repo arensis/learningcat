@@ -10,30 +10,44 @@ Construida con **HUGO** utilizando ficheros **Markdown** vitaminados y alojada c
 hugo server
 ```
 
-## Desplegar
+## Generar el fuente
 
-Se hará uso del script de despliegue que incluye el proyecto, habrá que ejecutarlo poniendo seguido de un mensaje que será el que figure como commit.
+El comando a continuación generará el fuente de la web dentro de la carpeta `public`
 
 ```console
-/.deploy.sh "Mensaje informativo de los cambios"
+hugo
 ```
 
-Este script genera el build descomprimido en una carpeta llamada `docs` del proyecto con el fuente del código. GitHub Pages está configurado para que coja el fuente de la web estática de dicha carpeta.
-En el commit se subirán tanto los cambios del proyecto como en el build.
+## Actualizaciones en el proyecto
+
+El proceso normal de subida de los cambios efectuados en el proyecto al repositorio será como la habitual.
+
+La subida de cambios en el proyecto no implica el despliegue del mismo. Si queremos desplegar los cambios efectuados tendremos que seguir los siguientes pasos.
+
+- ### Desplegar
+
+    Se hará uso del script de despliegue que incluye el proyecto,habrá que ejecutarlo poniendo seguido de un mensaje que será el que figure como commit.
+
+    ```console
+    /.deploy.sh "Mensaje informativo de los cambios"
+    ```
+
+    Este script genera código fuente de la web en una carpeta llamada `public`. GitHub Pages está configurado para que coja el fuente de la web estática de dicha carpeta.
 
 ## Añadir nuevas secciones
 
 Dentro de la carpeta content del proyecto habrá que crear otra carpeta que contendrá los ficheros markdown de la nueva sección.
 Los nombres de las carpetas no soportan camelCase, las palabras que conformen en nombre de las carpetas tendrán que estar separadas por un guión medio.
 
-- #### Página principal de la sección
+- ### Página principal de la sección
 
   - Página principal de la sección (otorga el título a la sección)
 
   - Se creará un fichero llamado _index.md dentro de la nueva carpeta de la sección que será su portada.
 
   - Template de ejemplo:
-    ```
+
+    ```markdown
     +++
     title = "Python"
     weight = 1
@@ -60,8 +74,8 @@ Los nombres de las carpetas no soportan camelCase, las palabras que conformen en
   - Se creará una carpeta que contendrá el archivo de la subsección. Dicho archivo tendrá que tener el nombre _index.md
 
   - Template de ejemplo:
-  
-    ```html
+
+    ```markdown
     +++
     title = "Instalar y ejecutar"
     +++
@@ -72,7 +86,7 @@ Los nombres de las carpetas no soportan camelCase, las palabras que conformen en
     - sudo apt-get install python3.6
 
 
-    ## Comprobar versión de Python instalada 
+    ## Comprobar versión de Python instalada
 
     - python3.6 -V
     ```
@@ -90,10 +104,10 @@ El árbol de carpetas y ficheros para las nuevas secciones quedaría así:
 
 Se pueden hacer divisiones más profundas en el árbol siguiendo el mismo procedimiento.
 
+### Enlcaces de interés
 
-#### Enlcaces de interés
- - [**Página oficial de HUGO**](https://gohugo.io/)
- - [**Documentación GitHub Pages**](https://pages.github.com/)
- - [**Documentación sobre template utilizado**](https://learn.netlify.com/en/)
- - [**Documentación de Markdown**](https://daringfireball.net/projects/markdown/syntax)
- - [**Editor de Markdown online**](https://stackedit.io/)
+- [**Página oficial de HUGO**](https://gohugo.io/)
+- [**Documentación GitHub Pages**](https://pages.github.com/)
+- [**Documentación sobre template utilizado**](https://learn.netlify.com/en/)
+- [**Documentación de Markdown**](https://daringfireball.net/projects/markdown/syntax)
+- [**Editor de Markdown online**](https://stackedit.io/)
