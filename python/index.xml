@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on Cat Learning</title>
-    <link>https://arensis.github.io/catlearning/python/</link>
-    <description>Recent content in Python on Cat Learning</description>
+    <title>Python on Learning Cat</title>
+    <link>https://arensis.github.io/learningcat/python/</link>
+    <description>Recent content in Python on Learning Cat</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://arensis.github.io/catlearning/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://arensis.github.io/learningcat/python/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

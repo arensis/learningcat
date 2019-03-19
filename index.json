@@ -1,62 +1,62 @@
 [
 {
-	"uri": "https://arensis.github.io/catlearning/python/",
+	"uri": "https://arensis.github.io/learningcat/python/",
 	"title": "Python",
 	"tags": [],
 	"description": "",
 	"content": " Entorno y lenguaje Python En este capítulo se hablará sobre cómo instalar y ejecutar python en un sistema unix, así como un manual sobre el lenguaje.\n  Web oficial: https://www.python.org/  "
 },
 {
-	"uri": "https://arensis.github.io/catlearning/ohmyzsh/",
+	"uri": "https://arensis.github.io/learningcat/ohmyzsh/",
 	"title": "Oh My Zsh!",
 	"tags": [],
 	"description": "",
 	"content": " Instalación, plugins y temas Oh My Zsh! En este capítulo veremos como instalar un framework para la consola con diversas utilidades.\n  Web oficial: https://ohmyz.sh/  "
 },
 {
-	"uri": "https://arensis.github.io/catlearning/git/",
+	"uri": "https://arensis.github.io/learningcat/git/",
 	"title": "Git",
 	"tags": [],
 	"description": "",
 	"content": " Instalación, herramientas y comandos Git En esta sección podremos ver cómo instalar git, algunas herramientas de utilidad y comandos.\n  Web oficial: https://git-scm.com/  "
 },
 {
-	"uri": "https://arensis.github.io/catlearning/django/",
+	"uri": "https://arensis.github.io/learningcat/django/",
 	"title": "Django",
 	"tags": [],
 	"description": "",
 	"content": " Framework para Python Django En este capitulo se hablará sobre cómo crear un proyecto con Django, además de un manual sobre el uso del mismo.\n  Web oficial: https://www.djangoproject.com/  "
 },
 {
-	"uri": "https://arensis.github.io/catlearning/",
+	"uri": "https://arensis.github.io/learningcat/",
 	"title": "Cat Learning web site",
 	"tags": [],
 	"description": "",
 	"content": " Cat learning web site "
 },
 {
-	"uri": "https://arensis.github.io/catlearning/categories/",
+	"uri": "https://arensis.github.io/learningcat/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://arensis.github.io/catlearning/python/install-run/",
+	"uri": "https://arensis.github.io/learningcat/python/install-run/",
 	"title": "Instalar y ejecutar",
 	"tags": [],
 	"description": "",
 	"content": " Instalar Python sudo apt-get update sudo apt-get install python3.6  Comprobar versión de Python instalada python3.6 -V   *En este caso la versión base que instalamos es la 3.6, por ello el comando para ejecutar será python3.6, pero dentro de la 3.6 tiene versiones, por defecto se instala la última versión estable disponible*\n Ejecutar un fichero Python en un terminal Los ficheros python tienen extensión *.py para ejecutar la aplicación que contiene tendrá que hacerse con el comando python3.6 seguido del fichero. (Tendrá que ejecutarse en la ruta donde se encuentre el fichero)\npython3.6 Ejemplo.py  Consola de Python En el terminal podemos ejecutar una consola de python para poder hacer pruebas con código directamente.\n Abrir la consola de python en un terminal:  python3.6   Ejecutar comando de ejemplo en consola  println(\u0026quot;Hola mundo\u0026quot;)   Salir o cerrar la consola de python  exit()  "
 },
 {
-	"uri": "https://arensis.github.io/catlearning/tags/",
+	"uri": "https://arensis.github.io/learningcat/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://arensis.github.io/catlearning/python/variables/",
+	"uri": "https://arensis.github.io/learningcat/python/variables/",
 	"title": "Variables",
 	"tags": [],
 	"description": "",
