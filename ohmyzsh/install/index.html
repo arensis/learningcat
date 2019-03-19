@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/learningcat/images/favicon.png" type="image/png">
 
-    <title>Categories :: Learning Cat</title>
+    <title>Instalación de ZSH y OhMyZsh! :: Learning Cat</title>
 
     
     <link href="/learningcat/css/nucleus.css?1553035505" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/learningcat/categories/">
+  <body class="" data-url="/learningcat/ohmyzsh/install/">
     <nav id="sidebar" class="">
 
 
@@ -157,7 +157,7 @@
   
     
     <li data-nav-id="/learningcat/ohmyzsh/" title="Oh My Zsh!" class="dd-item 
-        
+        parent
         
         
         ">
@@ -184,8 +184,8 @@
   
     
     <li data-nav-id="/learningcat/ohmyzsh/install/" title="Instalación de ZSH y OhMyZsh!" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/learningcat/ohmyzsh/install/">
@@ -293,7 +293,19 @@
                     
           
           
-            Categories
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/learningcat/'>Cat Learning web site</a> > <a href='/learningcat/ohmyzsh/'>Oh My Zsh!</a> > Instalación de ZSH y OhMyZsh!
+          
+         
+          
+         
           
         
                  
@@ -302,7 +314,18 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li><a href="#instalación-de-la-consola-zsh-y-del-framework-ohmyzsh">Instalación de la consola zsh y del framework OhMyZsh!</a>
+<ul>
+<li><a href="#instalación-de-la-consola-zsh">Instalación de la consola zsh</a></li>
+<li><a href="#instalación-de-ohmyzsh">Instalación de OhMyZsh</a>
+<ul>
+<li><a href="#enlaces-de-interés">Enlaces de interés</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -314,12 +337,46 @@
         
         <div id="body-inner">
           
-            <h1>Categories</h1>
+            <h1>Instalación de ZSH y OhMyZsh!</h1>
           
 
         
 
 
+
+
+<h1 id="instalación-de-la-consola-zsh-y-del-framework-ohmyzsh">Instalación de la consola zsh y del framework OhMyZsh!</h1>
+
+<h2 id="instalación-de-la-consola-zsh">Instalación de la consola zsh</h2>
+
+<pre><code class="language-bash">sudo apt install zsh
+</code></pre>
+
+<p>Comprueba si está correctamente instalada:</p>
+
+<pre><code class="language-bash">zsh --version
+</code></pre>
+
+<p>Cambia la consola por defecto del terminal a zsh:</p>
+
+<pre><code class="language-bash">chsh -s $(which zsh)
+</code></pre>
+
+<p>Para que se apliquen los cambios tendrás que cerrar sesión y volver a iniciar sesión</p>
+
+<h2 id="instalación-de-ohmyzsh">Instalación de OhMyZsh</h2>
+
+<pre><code class="language-bash">sudo apt-get install git-core
+</code></pre>
+
+<pre><code class="language-bash">sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+</code></pre>
+
+<h3 id="enlaces-de-interés">Enlaces de interés</h3>
+
+<ul>
+<li><a href="https://ohmyz.sh/">Web OhMyZsh!</a></li>
+</ul>
 
 
 <footer class=" footline" >
@@ -410,6 +467,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -424,6 +482,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -443,6 +502,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -480,8 +542,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/learningcat/ohmyzsh/" title="Oh My Zsh!"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/learningcat/python/" title="Python" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/learningcat/git/" title="Git" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
