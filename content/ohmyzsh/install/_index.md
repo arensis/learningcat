@@ -2,8 +2,6 @@
 title = "Instalación de ZSH y OhMyZsh!"
 +++
 
-# Instalación de la consola zsh y del framework OhMyZsh!
-
 ## Instalación de la consola zsh
 
 ```bash
