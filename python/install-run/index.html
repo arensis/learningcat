@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.47.1" />
+    <meta name="description" content="Documentation about languages and tools for kairos project">
+<meta name="author" content="Alfonso Madrid">
+
+    <link rel="icon" href="/catlearning/images/favicon.png" type="image/png">
+
+    <title>Instalar y ejecutar :: Cat Learning</title>
+
+    
+    <link href="/catlearning/css/nucleus.css?1553027764" rel="stylesheet">
+    <link href="/catlearning/css/fontawesome-all.min.css?1553027764" rel="stylesheet">
+    <link href="/catlearning/css/hybrid.css?1553027764" rel="stylesheet">
+    <link href="/catlearning/css/featherlight.min.css?1553027764" rel="stylesheet">
+    <link href="/catlearning/css/perfect-scrollbar.min.css?1553027764" rel="stylesheet">
+    <link href="/catlearning/css/auto-complete.css?1553027764" rel="stylesheet">
+    <link href="/catlearning/css/theme.css?1553027764" rel="stylesheet">
+    <link href="/catlearning/css/hugo-theme.css?1553027764" rel="stylesheet">
+    
+      <link href="/catlearning/css/theme-blue.css?1553027764" rel="stylesheet">
+    
+
+    <script src="/catlearning/js/jquery-2.x.min.js?1553027764"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/catlearning/python/install-run/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+<img src="/catlearninglogo.png" />
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/catlearning/js/lunr.min.js?1553027764"></script>
+<script type="text/javascript" src="/catlearning/js/auto-complete.js?1553027764"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/arensis.github.io\/catlearning";
+    
+</script>
+<script type="text/javascript" src="/catlearning/js/search.js?1553027764"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/catlearning/python/" title="Python" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/catlearning/python/">
+          <i class='fab fa-python'></i> Python
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/catlearning/python/install-run/" title="Instalar y ejecutar" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/catlearning/python/install-run/">
+          Instalar y ejecutar
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/catlearning/python/variables/" title="Variables" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/catlearning/python/variables/">
+          Variables
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/catlearning/ohmyzsh/" title="Oh My Zsh!" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/catlearning/ohmyzsh/">
+          <i class='fas fa-terminal'></i> Oh My Zsh!
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/catlearning/git/" title="Git" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/catlearning/git/">
+          <i class='fas fa-code-branch'></i> Git
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/catlearning/django/" title="Django" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/catlearning/django/">
+          <i class='fas fa-tools'></i> Django
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/catlearning/'>Cat Learning web site</a> > <a href='/catlearning/python/'>Python</a> > Instalar y ejecutar
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#instalar-python">Instalar Python</a></li>
+<li><a href="#comprobar-versión-de-python-instalada">Comprobar versión de Python instalada</a></li>
+<li><a href="#ejecutar-un-fichero-python-en-un-terminal">Ejecutar un fichero Python en un terminal</a></li>
+<li><a href="#consola-de-python">Consola de Python</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Instalar y ejecutar</h1>
+          
+
+        
+
+
+
+
+<h2 id="instalar-python">Instalar Python</h2>
+
+<pre><code class="language-bash">sudo apt-get update
+sudo apt-get install python3.6
+</code></pre>
+
+<h2 id="comprobar-versión-de-python-instalada">Comprobar versión de Python instalada</h2>
+
+<pre><code class="language-bash">python3.6 -V
+</code></pre>
+
+<blockquote>
+<p>*En este caso la versión base que instalamos es la 3.6, por ello el comando para ejecutar será <strong>python3.6</strong>, pero dentro de la 3.6 tiene versiones, por defecto se instala la última versión estable disponible*</p>
+</blockquote>
+
+<h2 id="ejecutar-un-fichero-python-en-un-terminal">Ejecutar un fichero Python en un terminal</h2>
+
+<p>Los ficheros python tienen extensión <code>*.py</code> para ejecutar la aplicación que contiene tendrá que hacerse con el comando <code>python3.6</code> seguido del fichero. (Tendrá que ejecutarse en la ruta donde se encuentre el fichero)</p>
+
+<pre><code class="language-bash">python3.6 Ejemplo.py
+</code></pre>
+
+<h2 id="consola-de-python">Consola de Python</h2>
+
+<p>En el terminal podemos ejecutar una consola de python para poder hacer pruebas con código directamente.</p>
+
+<ul>
+<li><strong>Abrir</strong> la consola de python en un terminal:</li>
+</ul>
+
+<pre><code class="language-bash">  python3.6
+</code></pre>
+
+<ul>
+<li><strong>Ejecutar comando</strong> de ejemplo en consola</li>
+</ul>
+
+<pre><code class="language-python">  println(&quot;Hola mundo&quot;)
+</code></pre>
+
+<ul>
+<li><strong>Salir o cerrar</strong> la consola de python</li>
+</ul>
+
+<pre><code class="language-python">  exit()
+</code></pre>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/catlearning/python/" title="Python"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/catlearning/python/variables/" title="Variables" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/catlearning/js/clipboard.min.js?1553027764"></script>
+    <script src="/catlearning/js/perfect-scrollbar.min.js?1553027764"></script>
+    <script src="/catlearning/js/perfect-scrollbar.jquery.min.js?1553027764"></script>
+    <script src="/catlearning/js/jquery.sticky.js?1553027764"></script>
+    <script src="/catlearning/js/featherlight.min.js?1553027764"></script>
+    <script src="/catlearning/js/html5shiv-printshiv.min.js?1553027764"></script>
+    <script src="/catlearning/js/highlight.pack.js?1553027764"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/catlearning/js/modernizr.custom.71422.js?1553027764"></script>
+    <script src="/catlearning/js/learn.js?1553027764"></script>
+    <script src="/catlearning/js/hugo-learn.js?1553027764"></script>
+
+    <link href="/catlearning/mermaid/mermaid.css?1553027764" type="text/css" rel="stylesheet" />
+    <script src="/catlearning/mermaid/mermaid.js?1553027764"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

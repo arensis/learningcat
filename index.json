@@ -1,0 +1,64 @@
+[
+{
+	"uri": "https://arensis.github.io/catlearning/python/",
+	"title": "Python",
+	"tags": [],
+	"description": "",
+	"content": " Entorno y lenguaje Python En este capítulo se hablará sobre cómo instalar y ejecutar python en un sistema unix, así como un manual sobre el lenguaje.\n  Web oficial: https://www.python.org/  "
+},
+{
+	"uri": "https://arensis.github.io/catlearning/ohmyzsh/",
+	"title": "Oh My Zsh!",
+	"tags": [],
+	"description": "",
+	"content": " Instalación, plugins y temas Oh My Zsh! En este capítulo veremos como instalar un framework para la consola con diversas utilidades.\n  Web oficial: https://ohmyz.sh/  "
+},
+{
+	"uri": "https://arensis.github.io/catlearning/git/",
+	"title": "Git",
+	"tags": [],
+	"description": "",
+	"content": " Instalación, herramientas y comandos Git En esta sección podremos ver cómo instalar git, algunas herramientas de utilidad y comandos.\n  Web oficial: https://git-scm.com/  "
+},
+{
+	"uri": "https://arensis.github.io/catlearning/django/",
+	"title": "Django",
+	"tags": [],
+	"description": "",
+	"content": " Framework para Python Django En este capitulo se hablará sobre cómo crear un proyecto con Django, además de un manual sobre el uso del mismo.\n  Web oficial: https://www.djangoproject.com/  "
+},
+{
+	"uri": "https://arensis.github.io/catlearning/",
+	"title": "Cat Learning web site",
+	"tags": [],
+	"description": "",
+	"content": " Cat learning web site "
+},
+{
+	"uri": "https://arensis.github.io/catlearning/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://arensis.github.io/catlearning/python/install-run/",
+	"title": "Instalar y ejecutar",
+	"tags": [],
+	"description": "",
+	"content": " Instalar Python sudo apt-get update sudo apt-get install python3.6  Comprobar versión de Python instalada python3.6 -V   *En este caso la versión base que instalamos es la 3.6, por ello el comando para ejecutar será python3.6, pero dentro de la 3.6 tiene versiones, por defecto se instala la última versión estable disponible*\n Ejecutar un fichero Python en un terminal Los ficheros python tienen extensión *.py para ejecutar la aplicación que contiene tendrá que hacerse con el comando python3.6 seguido del fichero. (Tendrá que ejecutarse en la ruta donde se encuentre el fichero)\npython3.6 Ejemplo.py  Consola de Python En el terminal podemos ejecutar una consola de python para poder hacer pruebas con código directamente.\n Abrir la consola de python en un terminal:  python3.6   Ejecutar comando de ejemplo en consola  println(\u0026quot;Hola mundo\u0026quot;)   Salir o cerrar la consola de python  exit()  "
+},
+{
+	"uri": "https://arensis.github.io/catlearning/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://arensis.github.io/catlearning/python/variables/",
+	"title": "Variables",
+	"tags": [],
+	"description": "",
+	"content": " Variables en Python  Sintaxis\n Los nombres de las variables en python tienen que empezar por una letra o bien un guión bajo. Los nombres de las variables son case sensitive por tanto una variable con nombre Numero es diferente a una variable con nombre numero Como convención en programación los nombres de métodos o variables suelen escribirse con el tipo de escritura camel case, la primera letara de cada palabra que conforme el nombre de la variable empezará con mayúscula (y por norma general la primera letra del nombre de la variable será en minúscula).\n Ejemplo:\n  variablePrimaria\nnombreDePila\n Asignación de valor\n  Para que una variable exista hay que asignarle un valor. Este valor puede ser nulo, o bien tener un valor de un tipo de dato determinado. Esta asignación se puede realizar de manera individual o múltiple\n Asignación individual\nvariable = 1  Asignación múltiple\n#Asignación de valores diferentes a diferentes variables variable1, variable2, variable3 = 1, 2.1, \u0026quot;Texto\u0026quot; #Asignación del mismo valor a múltiples variables variable1 = variable2 = variable3 = True  Alcance\n Las variables en Python son locales por defecto, es decir, las variables definidas en el bloque de código de una función sólo tienen existencia dentro de la misma. Además, las variables existentes fuera de una función no son visibles dentro de la misma.  Tipo de variable: Globales\n Si fuera necesario, se puede convertir una variable local en global, para poder indicar en una función que vamos a utilizar una variable global tenemos que declararla explícitamente con la sentencia global dentro de la función.\n Ejemplo:\n  variable_global = True def start(): global variable_global print \u0026quot;El valor de variable_global es:\u0026quot;, variable_global variable_global = not variable_global print \u0026quot;Ahora el valor de variable_global es:\u0026quot;, variable_global  Tipo de variable: Constantes\n Las constantes son colocadas dentro de módulos Python que no pueden ser cambiados. Por convención los nombre de las constantes se suelen expresar en mayúsculas y cada palabra separada por un guión bajo.\n Ejemplo:\n  CAMEL_CASE\nVARIABLE_1\n Tipos de dato\n Ejemplo:  valorNulo = None numeroEnteroInt = 1 cadena = \u0026quot;Hola\u0026quot; flotante = 1.2 booleano = True numeroEnteroLong = 1L numeroComplejo = 3.14j numeroComplejo = 2.1 + 7.8j   "
+}]

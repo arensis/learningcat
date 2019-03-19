@@ -3,6 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://arensis.github.io/catlearning/python/</loc>
+  </url>
+  
+  <url>
+    <loc>https://arensis.github.io/catlearning/ohmyzsh/</loc>
+  </url>
+  
+  <url>
+    <loc>https://arensis.github.io/catlearning/git/</loc>
+  </url>
+  
+  <url>
+    <loc>https://arensis.github.io/catlearning/django/</loc>
+  </url>
+  
+  <url>
     <loc>https://arensis.github.io/catlearning/</loc>
   </url>
   
@@ -12,8 +28,16 @@
   </url>
   
   <url>
+    <loc>https://arensis.github.io/catlearning/python/install-run/</loc>
+  </url>
+  
+  <url>
     <loc>https://arensis.github.io/catlearning/tags/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://arensis.github.io/catlearning/python/variables/</loc>
   </url>
   
 </urlset>

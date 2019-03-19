@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.47.1" />
+    <meta name="description" content="Documentation about languages and tools for kairos project">
+<meta name="author" content="Alfonso Madrid">
+
+    <link rel="icon" href="/catlearning/images/favicon.png" type="image/png">
+
+    <title>Python :: Cat Learning</title>
+
+    
+    <link href="/catlearning/css/nucleus.css?1553027764" rel="stylesheet">
+    <link href="/catlearning/css/fontawesome-all.min.css?1553027764" rel="stylesheet">
+    <link href="/catlearning/css/hybrid.css?1553027764" rel="stylesheet">
+    <link href="/catlearning/css/featherlight.min.css?1553027764" rel="stylesheet">
+    <link href="/catlearning/css/perfect-scrollbar.min.css?1553027764" rel="stylesheet">
+    <link href="/catlearning/css/auto-complete.css?1553027764" rel="stylesheet">
+    <link href="/catlearning/css/theme.css?1553027764" rel="stylesheet">
+    <link href="/catlearning/css/hugo-theme.css?1553027764" rel="stylesheet">
+    
+      <link href="/catlearning/css/theme-blue.css?1553027764" rel="stylesheet">
+    
+
+    <script src="/catlearning/js/jquery-2.x.min.js?1553027764"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/catlearning/python/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+<img src="/catlearninglogo.png" />
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/catlearning/js/lunr.min.js?1553027764"></script>
+<script type="text/javascript" src="/catlearning/js/auto-complete.js?1553027764"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/arensis.github.io\/catlearning";
+    
+</script>
+<script type="text/javascript" src="/catlearning/js/search.js?1553027764"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/catlearning/python/" title="Python" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/catlearning/python/">
+          <i class='fab fa-python'></i> Python
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/catlearning/python/install-run/" title="Instalar y ejecutar" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/catlearning/python/install-run/">
+          Instalar y ejecutar
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/catlearning/python/variables/" title="Variables" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/catlearning/python/variables/">
+          Variables
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/catlearning/ohmyzsh/" title="Oh My Zsh!" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/catlearning/ohmyzsh/">
+          <i class='fas fa-terminal'></i> Oh My Zsh!
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/catlearning/git/" title="Git" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/catlearning/git/">
+          <i class='fas fa-code-branch'></i> Git
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/catlearning/django/" title="Django" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/catlearning/django/">
+          <i class='fas fa-tools'></i> Django
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/catlearning/'>Cat Learning web site</a> > Python
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+            
+
+        
+          <div id="chapter">
+        
+        <div id="body-inner">
+          
+
+        
+
+
+
+
+<h3 id="entorno-y-lenguaje">Entorno y lenguaje</h3>
+
+<h1 id="python">Python</h1>
+
+<p>En este capítulo se hablará sobre cómo instalar y ejecutar python en un sistema unix, así como un manual sobre el lenguaje.</p>
+
+<blockquote>
+<h5 id="i-class-fab-fa-python-i-web-oficial-https-www-python-org"><i class='fab fa-python'></i>  Web oficial:  <a href="https://www.python.org/">https://www.python.org/</a></h5>
+</blockquote>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+            </div> 
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/catlearning/" title="Cat Learning web site"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/catlearning/python/install-run/" title="Instalar y ejecutar" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/catlearning/js/clipboard.min.js?1553027764"></script>
+    <script src="/catlearning/js/perfect-scrollbar.min.js?1553027764"></script>
+    <script src="/catlearning/js/perfect-scrollbar.jquery.min.js?1553027764"></script>
+    <script src="/catlearning/js/jquery.sticky.js?1553027764"></script>
+    <script src="/catlearning/js/featherlight.min.js?1553027764"></script>
+    <script src="/catlearning/js/html5shiv-printshiv.min.js?1553027764"></script>
+    <script src="/catlearning/js/highlight.pack.js?1553027764"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/catlearning/js/modernizr.custom.71422.js?1553027764"></script>
+    <script src="/catlearning/js/learn.js?1553027764"></script>
+    <script src="/catlearning/js/hugo-learn.js?1553027764"></script>
+
+    <link href="/catlearning/mermaid/mermaid.css?1553027764" type="text/css" rel="stylesheet" />
+    <script src="/catlearning/mermaid/mermaid.js?1553027764"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
