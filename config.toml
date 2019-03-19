@@ -1,0 +1,17 @@
+theme = "hugo-theme-learn"
+baseURL = "https://arensis.github.io/catlearning"
+languageCode = "en-us"
+title = "Cat Learning"
+
+[params]
+  themeVariant = "blue"
+  description="Documentation about languages and tools for kairos project"
+  author="Alfonso Madrid"
+  showVisitedLinks = false
+  disableBreadcrumb = false
+  disableNextPrev = false
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+
