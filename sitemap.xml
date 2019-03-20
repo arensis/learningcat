@@ -19,10 +19,6 @@
   </url>
   
   <url>
-    <loc>https://arensis.github.io/learningcat/</loc>
-  </url>
-  
-  <url>
     <loc>https://arensis.github.io/learningcat/categories/</loc>
     <priority>0</priority>
   </url>
@@ -33,6 +29,10 @@
   
   <url>
     <loc>https://arensis.github.io/learningcat/python/install-run/</loc>
+  </url>
+  
+  <url>
+    <loc>https://arensis.github.io/learningcat/</loc>
   </url>
   
   <url>
