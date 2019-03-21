@@ -1,5 +1,6 @@
 +++
 title = "Instalación de ZSH y OhMyZsh!"
+weight = 1
 +++
 
 ## Instalación de la consola zsh

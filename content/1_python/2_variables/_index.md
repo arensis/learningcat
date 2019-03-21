@@ -1,5 +1,6 @@
 +++
 title = "Variables"
+weight = 2
 +++
 
 ## Variables en Python

@@ -1,5 +1,6 @@
 +++
 title = "Instalar y configurar"
+weight = 1
 +++
 
 ## Instalar Git
@@ -28,13 +29,13 @@ git --version
 
   Para poder utilizar git es necesario añadir esta información, de lo contrario no nos dejará realizar acciones de escritura.
 
-  - #### Configurar el nombre
+  - **Configurar el nombre**
 
      ```bash
      git config --global user.name "John Doe"
      ```
 
-  - #### Configurar el e-mail
+  - **Configurar el e-mail**
 
      ```bash
      git config --global user.email johndoe@example.com
@@ -44,7 +45,7 @@ git --version
 
   También podemos configurar el editor que se abrirá cuando git requiera de editar o añadir algún mensaje. Por defecto, el editor de texto que git usará si no se ha configurado ninguno es el editor de texto por defecto del sistema.
 
-  - #### Configurar editor de texto
+  - **Configurar editor de texto**
 
      ```bash
      git config --global core.editor emacs
@@ -73,7 +74,7 @@ Para ello primero tenemos que tener una clave ssh pública en nuestro equipo, pa
 
 - ### Crear una clave ssh para conectar con github/gitlab
   
-  - #### Crear clave ssh
+  - **Crear clave ssh**
 
     Para crear la clave ssh, para ello introduciremos el comando a continuación substituyendo el e-mail de ejemplo por el e-mail con el que nos hayamos registrado en gihub/gitlab
 
@@ -98,7 +99,7 @@ Para ello primero tenemos que tener una clave ssh pública en nuestro equipo, pa
       > Enter same passphrase again: [Type passphrase again]
       ```
   
-  - #### Añadir clave ssh al ssh-agent
+  - **Añadir clave ssh al ssh-agent**
 
     Una vez que tenemos creada la clave ssh, tendremos que añadir la clave que queremos utilizar al ssh-agen. Para ello primeramente lo iniciaremos en segundo plano con el siguiente comando:
 
@@ -116,7 +117,7 @@ Para ello primero tenemos que tener una clave ssh pública en nuestro equipo, pa
 
     Una vez hecho esto ya podremos proceder a añadirla en github/gitlab en la configuración del perfil de usuario, en el apartado SSH. Para ello tendremos que copiar la clave ssh que hemos creado para incluirla en nuestro listado de claves ssh de github/gitlab.
 
-  - #### Copiar clave pública en el portapapeles
+  - **Copiar clave pública en el portapapeles**
 
     Para copiar la clave pública podremos hacerlo abriendo el fichero en un editor de textos y copiándola o mediante la herramienta xclip:
 

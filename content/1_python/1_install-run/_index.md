@@ -1,5 +1,6 @@
 +++
 title = "Instalar y ejecutar"
+weight = 1
 +++
 
 ## Instalar Python
