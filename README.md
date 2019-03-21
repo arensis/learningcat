@@ -29,7 +29,7 @@ La subida de cambios en el proyecto no implica el despliegue del mismo. Si quere
     Se hará uso del script de despliegue que incluye el proyecto,habrá que ejecutarlo poniendo seguido de un mensaje que será el que figure como commit.
 
     ```console
-    /.deploy.sh "Mensaje informativo de los cambios"
+    sh deploy.sh "Mensaje informativo de los cambios"
     ```
 
     Este script genera código fuente de la web en una carpeta llamada `public`. GitHub Pages está configurado para que coja el fuente de la web estática de dicha carpeta.
