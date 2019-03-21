@@ -32,7 +32,3 @@ sudo apt-get install git-core
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
-
-### Enlaces de interés
-
-- [Web OhMyZsh!](https://ohmyz.sh/)

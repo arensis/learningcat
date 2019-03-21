@@ -2,7 +2,7 @@
 title: "Learning cat web site"
 ---
 
-# Cat learning web site
+# Learning Cat web site
 
 <center>Apuntes e información relacionadas con el proyecto Kairos</center>
 ---

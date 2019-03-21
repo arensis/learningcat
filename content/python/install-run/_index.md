@@ -9,7 +9,7 @@ sudo apt-get update
 sudo apt-get install python3.6
 ```
 
-## Comprobar versión de Python instalada 
+## Comprobar versión de Python instalada
 
 ```bash
 python3.6 -V
