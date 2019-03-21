@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Django on Learning Cat</title>
-    <link>https://arensis.github.io/learningcat/django/</link>
+    <link>https://arensis.github.io/learningcat/4_django/</link>
     <description>Recent content in Django on Learning Cat</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://arensis.github.io/learningcat/django/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://arensis.github.io/learningcat/4_django/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

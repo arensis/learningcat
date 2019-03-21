@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/learningcat/images/favicon.png" type="image/png">
 
-    <title>Learning cat web site :: Learning Cat</title>
+    <title>Variables :: Learning Cat</title>
 
     
     <link href="/learningcat/css/nucleus.css?1553200825" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/learningcat/">
+  <body class="" data-url="/learningcat/1_python/2_variables/">
     <nav id="sidebar" class="">
 
 
@@ -77,7 +77,7 @@
   
     
     <li data-nav-id="/learningcat/1_python/" title="Python" class="dd-item 
-        
+        parent
         
         
         ">
@@ -128,8 +128,8 @@
   
     
     <li data-nav-id="/learningcat/1_python/2_variables/" title="Variables" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/learningcat/1_python/2_variables/">
@@ -336,29 +336,171 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/learningcat/'>Learning cat web site</a> > <a href='/learningcat/1_python/'>Python</a> > Variables
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#variables-en-python">Variables en Python</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
 
         
         <div id="body-inner">
           
+            <h1>Variables</h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
-
- 
 
 
-<h1 id="learning-cat-web-site">Learning Cat web site</h1>
 
-<h2 id="center-apuntes-e-información-relacionadas-con-el-proyecto-kairos-center"><center>Apuntes e información relacionadas con el proyecto Kairos</center></h2>
+<h2 id="variables-en-python">Variables en Python</h2>
 
-<div class="notices note" ><p>Kairos pretende ser un proyecto Arduino de una estación meteorológica completa, el backend analizará los datos recogidos por la estación, guardando un historico de los resultados y exponiéndolos mediante un API REST.</p>
-</div>
+<ul>
+<li><p><strong>Sintaxis</strong></p>
 
+<ul>
+<li>Los nombres de las variables en python tienen que empezar por una letra o bien un guión bajo.</li>
+<li>Los nombres de las variables son case sensitive por tanto una variable con nombre Numero es diferente a una variable con nombre numero</li>
+
+<li><p>Como convención en programación los nombres de métodos o variables suelen escribirse con el tipo de escritura camel case, la primera letara de cada palabra que conforme el nombre de la variable empezará con mayúscula (y por norma general la primera letra del nombre de la variable será en minúscula).</p></li>
+
+<li><p>Ejemplo:</p></li>
+</ul>
+
+<p><code>variablePrimaria</code></p>
+
+<p><code>nombreDePila</code></p></li>
+
+<li><p><strong>Asignación de valor</strong></p></li>
+</ul>
+
+<p>Para que una variable exista hay que asignarle un valor. Este valor puede ser nulo, o bien tener un valor de un tipo de dato determinado.
+  Esta asignación se puede realizar de manera individual o múltiple</p>
+
+<ul>
+<li><p>Asignación individual</p>
+
+<pre><code class="language-python">variable = 1
+</code></pre></li>
+
+<li><p>Asignación múltiple</p>
+
+<pre><code class="language-python">#Asignación de valores diferentes a diferentes variables
+variable1, variable2, variable3 = 1, 2.1, &quot;Texto&quot;
+
+#Asignación del mismo valor a múltiples variables
+variable1 = variable2 = variable3 = True
+</code></pre></li>
+
+<li><p><strong>Alcance</strong></p>
+
+<ul>
+<li>Las variables en Python son locales por defecto, es decir, las variables definidas en el bloque de código de una función sólo tienen existencia dentro de la misma. Además, las variables existentes fuera de una función no son visibles dentro de la misma.</li>
+</ul></li>
+
+<li><p><strong>Tipo de variable:</strong> <em>Globales</em></p>
+
+<ul>
+<li><p>Si fuera necesario, se puede convertir una variable local en global, para poder indicar en una función que vamos a utilizar una variable global tenemos que declararla explícitamente con la sentencia <code>global</code> dentro de la función.</p></li>
+
+<li><p>Ejemplo:</p></li>
+</ul>
+
+<pre><code class="language-python">  variable_global = True
+
+  def start():
+  global variable_global
+  print &quot;El valor de variable_global es:&quot;, variable_global
+  variable_global = not variable_global
+  print &quot;Ahora el valor de variable_global es:&quot;, variable_global
+</code></pre></li>
+
+<li><p><strong>Tipo de variable:</strong> <em>Constantes</em></p>
+
+<ul>
+<li>Las constantes son colocadas dentro de módulos Python que no pueden ser cambiados.</li>
+
+<li><p>Por convención los nombre de las constantes se suelen expresar en mayúsculas y cada palabra separada por un guión bajo.</p></li>
+
+<li><p>Ejemplo:</p></li>
+</ul>
+
+<p><code>CAMEL_CASE</code></p>
+
+<p><code>VARIABLE_1</code></p></li>
+
+<li><p><strong>Tipos de dato</strong></p>
+
+<ul>
+<li>Ejemplo:</li>
+</ul>
+
+<pre><code class="language-python">  valorNulo = None
+  numeroEnteroInt = 1
+  cadena = &quot;Hola&quot;
+  flotante = 1.2
+  booleano = True
+  numeroEnteroLong = 1L
+  numeroComplejo = 3.14j
+  numeroComplejo = 2.1 + 7.8j
+</code></pre></li>
+</ul>
+
+
+<footer class=" footline" >
 	
-  
+</footer>
+
         
         </div> 
         
@@ -390,8 +532,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -408,21 +548,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -435,6 +562,23 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -442,6 +586,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -547,8 +694,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/learningcat/1_python/1_install-run/" title="Instalar y ejecutar"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/learningcat/1_python/" title="Python" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/learningcat/2_ohmyzsh/" title="Oh My Zsh!" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -579,4 +728,3 @@
 
   </body>
 </html>
-

@@ -3,36 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://arensis.github.io/learningcat/python/</loc>
+    <loc>https://arensis.github.io/learningcat/2_ohmyzsh/1_install/</loc>
   </url>
   
   <url>
-    <loc>https://arensis.github.io/learningcat/ohmyzsh/</loc>
+    <loc>https://arensis.github.io/learningcat/3_git/1_install/</loc>
   </url>
   
   <url>
-    <loc>https://arensis.github.io/learningcat/git/</loc>
+    <loc>https://arensis.github.io/learningcat/1_python/1_install-run/</loc>
   </url>
   
   <url>
-    <loc>https://arensis.github.io/learningcat/django/</loc>
+    <loc>https://arensis.github.io/learningcat/1_python/</loc>
+  </url>
+  
+  <url>
+    <loc>https://arensis.github.io/learningcat/2_ohmyzsh/2_config/</loc>
+  </url>
+  
+  <url>
+    <loc>https://arensis.github.io/learningcat/2_ohmyzsh/</loc>
+  </url>
+  
+  <url>
+    <loc>https://arensis.github.io/learningcat/1_python/2_variables/</loc>
+  </url>
+  
+  <url>
+    <loc>https://arensis.github.io/learningcat/3_git/</loc>
+  </url>
+  
+  <url>
+    <loc>https://arensis.github.io/learningcat/4_django/</loc>
   </url>
   
   <url>
     <loc>https://arensis.github.io/learningcat/categories/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://arensis.github.io/learningcat/ohmyzsh/install/</loc>
-  </url>
-  
-  <url>
-    <loc>https://arensis.github.io/learningcat/git/install/</loc>
-  </url>
-  
-  <url>
-    <loc>https://arensis.github.io/learningcat/python/install-run/</loc>
   </url>
   
   <url>
@@ -42,10 +50,6 @@
   <url>
     <loc>https://arensis.github.io/learningcat/tags/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://arensis.github.io/learningcat/python/variables/</loc>
   </url>
   
 </urlset>

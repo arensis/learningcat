@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Oh My Zsh! on Learning Cat</title>
-    <link>https://arensis.github.io/learningcat/ohmyzsh/</link>
+    <link>https://arensis.github.io/learningcat/2_ohmyzsh/</link>
     <description>Recent content in Oh My Zsh! on Learning Cat</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://arensis.github.io/learningcat/ohmyzsh/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://arensis.github.io/learningcat/2_ohmyzsh/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
