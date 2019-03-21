@@ -12,19 +12,19 @@
     <title>Instalar y configurar :: Learning Cat</title>
 
     
-    <link href="/learningcat/css/nucleus.css?1553127935" rel="stylesheet">
-    <link href="/learningcat/css/fontawesome-all.min.css?1553127935" rel="stylesheet">
-    <link href="/learningcat/css/hybrid.css?1553127935" rel="stylesheet">
-    <link href="/learningcat/css/featherlight.min.css?1553127935" rel="stylesheet">
-    <link href="/learningcat/css/perfect-scrollbar.min.css?1553127935" rel="stylesheet">
-    <link href="/learningcat/css/auto-complete.css?1553127935" rel="stylesheet">
-    <link href="/learningcat/css/theme.css?1553127935" rel="stylesheet">
-    <link href="/learningcat/css/hugo-theme.css?1553127935" rel="stylesheet">
+    <link href="/learningcat/css/nucleus.css?1553128313" rel="stylesheet">
+    <link href="/learningcat/css/fontawesome-all.min.css?1553128313" rel="stylesheet">
+    <link href="/learningcat/css/hybrid.css?1553128313" rel="stylesheet">
+    <link href="/learningcat/css/featherlight.min.css?1553128313" rel="stylesheet">
+    <link href="/learningcat/css/perfect-scrollbar.min.css?1553128313" rel="stylesheet">
+    <link href="/learningcat/css/auto-complete.css?1553128313" rel="stylesheet">
+    <link href="/learningcat/css/theme.css?1553128313" rel="stylesheet">
+    <link href="/learningcat/css/hugo-theme.css?1553128313" rel="stylesheet">
     
-      <link href="/learningcat/css/theme-blue.css?1553127935" rel="stylesheet">
+      <link href="/learningcat/css/theme-blue.css?1553128313" rel="stylesheet">
     
 
-    <script src="/learningcat/js/jquery-2.x.min.js?1553127935"></script>
+    <script src="/learningcat/js/jquery-2.x.min.js?1553128313"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/learningcat/js/lunr.min.js?1553127935"></script>
-<script type="text/javascript" src="/learningcat/js/auto-complete.js?1553127935"></script>
+<script type="text/javascript" src="/learningcat/js/lunr.min.js?1553128313"></script>
+<script type="text/javascript" src="/learningcat/js/auto-complete.js?1553128313"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/arensis.github.io\/learningcat";
     
 </script>
-<script type="text/javascript" src="/learningcat/js/search.js?1553127935"></script>
+<script type="text/javascript" src="/learningcat/js/search.js?1553128313"></script>
 
     
   </div>
@@ -360,15 +360,7 @@
 <li><a href="#comprobar-la-versión-de-git-instalada">Comprobar la versión de Git instalada</a></li>
 <li><a href="#configuración">Configuración</a>
 <ul>
-<li>
-<ul>
-<li><a href="#configurar-el-nombre">Configurar el nombre</a></li>
-<li><a href="#configurar-el-e-mail">Configurar el e-mail</a></li>
-</ul></li>
-<li><a href="#editor-de-texto-por-defecto">Editor de texto por defecto</a>
-<ul>
-<li><a href="#configurar-editor-de-texto">Configurar editor de texto</a></li>
-</ul></li>
+<li><a href="#editor-de-texto-por-defecto">Editor de texto por defecto</a></li>
 </ul></li>
 <li><a href="#configuración-para-github-gitlab-para-conectar-por-ssh">Configuración para github/gitlab para conectar por ssh</a>
 <ul>
@@ -424,12 +416,12 @@
 <p>Para poder utilizar git es necesario añadir esta información, de lo contrario no nos dejará realizar acciones de escritura.</p>
 
 <ul>
-<li><h4 id="configurar-el-nombre">Configurar el nombre</h4>
+<li><p><strong>Configurar el nombre</strong></p>
 
 <pre><code class="language-bash"> git config --global user.name &quot;John Doe&quot;
 </code></pre></li>
 
-<li><h4 id="configurar-el-e-mail">Configurar el e-mail</h4>
+<li><p><strong>Configurar el e-mail</strong></p>
 
 <pre><code class="language-bash"> git config --global user.email johndoe@example.com
 </code></pre></li>
@@ -440,7 +432,7 @@
 <p>También podemos configurar el editor que se abrirá cuando git requiera de editar o añadir algún mensaje. Por defecto, el editor de texto que git usará si no se ha configurado ninguno es el editor de texto por defecto del sistema.</p>
 
 <ul>
-<li><h4 id="configurar-editor-de-texto">Configurar editor de texto</h4>
+<li><p><strong>Configurar editor de texto</strong></p>
 
 <pre><code class="language-bash"> git config --global core.editor emacs
 </code></pre></li>
@@ -474,7 +466,7 @@
 <li><h3 id="crear-una-clave-ssh-para-conectar-con-github-gitlab">Crear una clave ssh para conectar con github/gitlab</h3>
 
 <ul>
-<li>#### Crear clave ssh</li>
+<li><strong>Crear clave ssh</strong></li>
 </ul>
 
 <p>Para crear la clave ssh, para ello introduciremos el comando a continuación substituyendo el e-mail de ejemplo por el e-mail con el que nos hayamos registrado en gihub/gitlab</p>
@@ -502,7 +494,7 @@
 </code></pre>
 
 <ul>
-<li>#### Añadir clave ssh al ssh-agent</li>
+<li><strong>Añadir clave ssh al ssh-agent</strong></li>
 </ul>
 
 <p>Una vez que tenemos creada la clave ssh, tendremos que añadir la clave que queremos utilizar al ssh-agen. Para ello primeramente lo iniciaremos en segundo plano con el siguiente comando:</p>
@@ -520,7 +512,7 @@
 <p>Una vez hecho esto ya podremos proceder a añadirla en github/gitlab en la configuración del perfil de usuario, en el apartado SSH. Para ello tendremos que copiar la clave ssh que hemos creado para incluirla en nuestro listado de claves ssh de github/gitlab.</p>
 
 <ul>
-<li>#### Copiar clave pública en el portapapeles</li>
+<li><strong>Copiar clave pública en el portapapeles</strong></li>
 </ul>
 
 <p>Para copiar la clave pública podremos hacerlo abriendo el fichero en un editor de textos y copiándola o mediante la herramienta xclip:</p>
@@ -737,20 +729,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/learningcat/js/clipboard.min.js?1553127935"></script>
-    <script src="/learningcat/js/perfect-scrollbar.min.js?1553127935"></script>
-    <script src="/learningcat/js/perfect-scrollbar.jquery.min.js?1553127935"></script>
-    <script src="/learningcat/js/jquery.sticky.js?1553127935"></script>
-    <script src="/learningcat/js/featherlight.min.js?1553127935"></script>
-    <script src="/learningcat/js/html5shiv-printshiv.min.js?1553127935"></script>
-    <script src="/learningcat/js/highlight.pack.js?1553127935"></script>
+    <script src="/learningcat/js/clipboard.min.js?1553128313"></script>
+    <script src="/learningcat/js/perfect-scrollbar.min.js?1553128313"></script>
+    <script src="/learningcat/js/perfect-scrollbar.jquery.min.js?1553128313"></script>
+    <script src="/learningcat/js/jquery.sticky.js?1553128313"></script>
+    <script src="/learningcat/js/featherlight.min.js?1553128313"></script>
+    <script src="/learningcat/js/html5shiv-printshiv.min.js?1553128313"></script>
+    <script src="/learningcat/js/highlight.pack.js?1553128313"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/learningcat/js/modernizr.custom.71422.js?1553127935"></script>
-    <script src="/learningcat/js/learn.js?1553127935"></script>
-    <script src="/learningcat/js/hugo-learn.js?1553127935"></script>
+    <script src="/learningcat/js/modernizr.custom.71422.js?1553128313"></script>
+    <script src="/learningcat/js/learn.js?1553128313"></script>
+    <script src="/learningcat/js/hugo-learn.js?1553128313"></script>
 
-    <link href="/learningcat/mermaid/mermaid.css?1553127935" type="text/css" rel="stylesheet" />
-    <script src="/learningcat/mermaid/mermaid.js?1553127935"></script>
+    <link href="/learningcat/mermaid/mermaid.css?1553128313" type="text/css" rel="stylesheet" />
+    <script src="/learningcat/mermaid/mermaid.js?1553128313"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
