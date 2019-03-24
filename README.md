@@ -1,8 +1,8 @@
 # Learning Cat web site
 
-Página web dedicada a añadir apuntes sobre lenguajes, frameworks, herramientas... útiles para el proyecto Kairos.
+Página web dedicada a añadir apuntes sobre lenguajes, frameworks, herramientas... utilizadas en el proyecto Kairos.
 
-Construida con **HUGO** utilizando ficheros **Markdown** vitaminados y alojada con **GitHub Pages**
+Construida con **HUGO** utilizando ficheros **Markdown** y alojada con **GitHub Pages**
 
 ## Arrancar en local
 
@@ -20,19 +20,28 @@ hugo
 
 ## Actualizaciones en el proyecto
 
-El proceso normal de subida de los cambios efectuados en el proyecto al repositorio será como la habitual.
+El proyecto está dividido en dos ramas:
 
-La subida de cambios en el proyecto no implica el despliegue del mismo. Si queremos desplegar los cambios efectuados tendremos que seguir los siguientes pasos.
+- **Rama master**: Rama general del proyecto que contiene el código fuente del proyecto. Se hará commit de todos los cambios que se produzcan en el código fuente y que se quieran preservar.
+
+- **Rama gh-pages**: Esta rama contiene el código generado por el comando `hugo` en la carpeta `public`, dicho código es una conversión del código fuente en una página web estática con ficheros html, css, multimedia, etc ... La carpeta public está ignorada para publicarse con la rama master del código fuente, lo que permite tener el código fuente separado de la página web generada. De esta manera mantenemos por separado el histórico, lo que permite poder realizar cambios en el fuente agenos a la construcción de web.
+
+GitHub Pages está configurado para que tome la rama `gh-pages` como el fuente de publicación de la página web.
 
 - ### Desplegar
 
-    Se hará uso del script de despliegue que incluye el proyecto,habrá que ejecutarlo poniendo seguido de un mensaje que será el que figure como commit.
+    Al tener por separado el código fuente del código generado para publicar, si necesitamos desplegar algún cambio que hayamos realizado en la rama `master` podremos ejecutar el siguiente comando:
 
     ```console
     sh deploy.sh "Mensaje informativo de los cambios"
     ```
 
-    Este script genera código fuente de la web en una carpeta llamada `public`. GitHub Pages está configurado para que coja el fuente de la web estática de dicha carpeta.
+Este comando ejecuta un script que se encuenra en la raíz del fuente y sigue la siguient secuencia:
+
+ - Comprueba que no haya cambios sin commitear en la rama master, en cuyo caso mostrará un mensaje indicándolo y no continuará con el script. 
+ - Borrará la carpeta public si existe alguna en el proyecto, y volverá a generarla con el comando hugo.
+ - Hará commit de los camabios en la rama `gh-pages`con el mensaje que le hemos pasado en el comando.
+ - Hará push de los cambios quedando ya desplegados en github.
 
 ## Añadir nuevas secciones
 
@@ -72,12 +81,17 @@ Los nombres de las carpetas no soportan camelCase, las palabras que conformen en
 
 - #### Subsecciones
   - Se creará una carpeta que contendrá el archivo de la subsección. Dicho archivo tendrá que tener el nombre _index.md
+  - Se tendrá que especificar en el template:
+    - El título de la sección `title`: Dará nombre a la subsección en el menú y también proporcionará el título en el contenido de la misma.
+    - El orden que ocupará dentro de la sección padre `weight`
+  - No se deberá añadir el parámetro de `chapter`.
 
   - Template de ejemplo:
 
     ```markdown
     +++
     title = "Instalar y ejecutar"
+    weight = 1
     +++
 
     ## Instalar Python
@@ -91,16 +105,16 @@ Los nombres de las carpetas no soportan camelCase, las palabras que conformen en
     - python3.6 -V
     ```
 
-  - Se pueden incluir otros parámetros como en la portada en caso de ser necesarios, por ejemplo para añadir un orden determinado a las subsecciones o elemento html antes del título. No se deberá añadir el parámetro de `chapter`.
-
 El árbol de carpetas y ficheros para las nuevas secciones quedaría así:
 
     content
-    ├── [seccion-padre] //Carpeta de sección-padre Ej: python
-    │   ├── [seccion-hija] //Carpeta de sección-hija Ej: install-run
-    │   │   └── _index.md //Fichero de contenido de sección-hija
-    │   └── _index.md //Fichero de portada de sección-padre
-    └── _index.md //Fichero de portada principal de la web
+    ├── _index.md //Fichero de portada principal de la web</span>
+    └── [seccion-padre] //Carpeta de sección-padre Ej: python
+        ├── _index.md //Fichero de portada de sección-padre
+        └── [seccion-hija] //Carpeta de sección-hija Ej: install-run
+            └── _index.md //Fichero de contenido de sección-hija
+
+    
 
 Se pueden hacer divisiones más profundas en el árbol siguiendo el mismo procedimiento.
 
