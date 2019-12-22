@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.39" />
+    <meta name="description" content="Documentation about languages and tools for kairos project">
+<meta name="author" content="Alfonso Madrid">
+
+    <link rel="icon" href="/learningcat/images/favicon.png" type="image/png">
+
+    <title>Instalar y configurar :: Learning Cat</title>
+
+    
+    <link href="/learningcat/css/nucleus.css?1577021525" rel="stylesheet">
+    <link href="/learningcat/css/fontawesome-all.min.css?1577021525" rel="stylesheet">
+    <link href="/learningcat/css/hybrid.css?1577021525" rel="stylesheet">
+    <link href="/learningcat/css/featherlight.min.css?1577021525" rel="stylesheet">
+    <link href="/learningcat/css/perfect-scrollbar.min.css?1577021525" rel="stylesheet">
+    <link href="/learningcat/css/auto-complete.css?1577021525" rel="stylesheet">
+    <link href="/learningcat/css/theme.css?1577021525" rel="stylesheet">
+    <link href="/learningcat/css/hugo-theme.css?1577021525" rel="stylesheet">
+    
+      <link href="/learningcat/css/theme-blue.css?1577021525" rel="stylesheet">
+    
+
+    <script src="/learningcat/js/jquery-2.x.min.js?1577021525"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/learningcat/3_git/1_install/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+<a id="logo" href="/learningcat">
+  <img src="/learningcat/images/learningcatcenter.png">
+</a>  
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/learningcat/js/lunr.min.js?1577021525"></script>
+<script type="text/javascript" src="/learningcat/js/auto-complete.js?1577021525"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/arensis.github.io\/learningcat";
+    
+</script>
+<script type="text/javascript" src="/learningcat/js/search.js?1577021525"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/1_python/" title="Python" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/learningcat/1_python/">
+          <i class='fab fa-python'></i> Python
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/1_python/1_install-run/" title="Instalar y ejecutar" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/learningcat/1_python/1_install-run/">
+          Instalar y ejecutar
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/1_python/2_variables/" title="Variables" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/learningcat/1_python/2_variables/">
+          Variables
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/2_ohmyzsh/" title="Oh My Zsh!" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/learningcat/2_ohmyzsh/">
+          <i class='fas fa-terminal'></i> Oh My Zsh!
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/2_ohmyzsh/1_install/" title="Instalación de ZSH y OhMyZsh!" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/learningcat/2_ohmyzsh/1_install/">
+          Instalación de ZSH y OhMyZsh!
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/2_ohmyzsh/2_config/" title="Configuración" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/learningcat/2_ohmyzsh/2_config/">
+          Configuración
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/3_git/" title="Git" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/learningcat/3_git/">
+          <i class='fas fa-code-branch'></i> Git
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/3_git/1_install/" title="Instalar y configurar" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/learningcat/3_git/1_install/">
+          Instalar y configurar
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/4_django/" title="Django" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/learningcat/4_django/">
+          <i class='fas fa-tools'></i> Django
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/learningcat/'>Learning cat web site</a> > <a href='/learningcat/3_git/'>Git</a> > Instalar y configurar
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#instalar-git">Instalar Git</a></li>
+<li><a href="#comprobar-la-versión-de-git-instalada">Comprobar la versión de Git instalada</a></li>
+<li><a href="#configuración">Configuración</a>
+<ul>
+<li><a href="#editor-de-texto-por-defecto">Editor de texto por defecto</a></li>
+</ul></li>
+<li><a href="#configuración-para-github-gitlab-para-conectar-por-ssh">Configuración para github/gitlab para conectar por ssh</a>
+<ul>
+<li><a href="#crear-una-clave-ssh-para-conectar-con-github-gitlab">Crear una clave ssh para conectar con github/gitlab</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Instalar y configurar
+            </h1>
+          
+
+        
+
+
+
+
+	
+
+<h2 id="instalar-git">Instalar Git</h2>
+
+<pre><code class="language-bash">sudo apt install git-all
+</code></pre>
+
+<h2 id="comprobar-la-versión-de-git-instalada">Comprobar la versión de Git instalada</h2>
+
+<pre><code class="language-bash">git --version
+</code></pre>
+
+<h2 id="configuración">Configuración</h2>
+
+<ul>
+<li>### Mostrar la configuración actual</li>
+</ul>
+
+<pre><code class="language-bash">  git config --list
+</code></pre>
+
+<ul>
+<li>### Identidad</li>
+</ul>
+
+<p>Una vez realizada la instalación, hay que configurar la identidad. La identidad consta de un nombre y un e-mail, esta información servirá para identificar quién ha sido el autor de una acción realizada con git (commit, merge, revert&hellip;).</p>
+
+<p>Para poder utilizar git es necesario añadir esta información, de lo contrario no nos dejará realizar acciones de escritura.</p>
+
+<ul>
+<li><p><strong>Configurar el nombre</strong></p>
+
+<pre><code class="language-bash"> git config --global user.name &quot;John Doe&quot;
+</code></pre></li>
+
+<li><p><strong>Configurar el e-mail</strong></p>
+
+<pre><code class="language-bash"> git config --global user.email johndoe@example.com
+</code></pre></li>
+
+<li><h3 id="editor-de-texto-por-defecto">Editor de texto por defecto</h3></li>
+</ul>
+
+<p>También podemos configurar el editor que se abrirá cuando git requiera de editar o añadir algún mensaje. Por defecto, el editor de texto que git usará si no se ha configurado ninguno es el editor de texto por defecto del sistema.</p>
+
+<ul>
+<li><p><strong>Configurar editor de texto</strong></p>
+
+<pre><code class="language-bash"> git config --global core.editor emacs
+</code></pre></li>
+</ul>
+
+<h2 id="configuración-para-github-gitlab-para-conectar-por-ssh">Configuración para github/gitlab para conectar por ssh</h2>
+
+<p>Para que podamos realizar acciones (commits, merge, reverts&hellip;) sobre un repositorio en el que se nos han otorgado permisos podremos hacerlo de dos maneras, o por usuario y contraseña (teniendo que introducir el usuario y contraseña cada vez que queramos ejecutar una acción sobre él), o bien por ssh. Al hacerlo por ssh cada vez que queramos ejecutar una acción leerá nuestra clave ssh para darnos acceso de manera automática.</p>
+
+<p>Para ello primero tenemos que tener una clave ssh pública en nuestro equipo, para comprobarlo tendremos que listar los ficheros que se encuentran en el directorio <code>~/.ssh</code> con el siguiente comando:</p>
+
+<ul>
+<li>### Comprobar si existen claves ssh ya creadas</li>
+</ul>
+
+<pre><code class="language-bash">  ls -al ~/.ssh
+</code></pre>
+
+<p>Si ya hubiera alguna clave creada aparecería un listado de archivos, normalente los ficheros suelen tener un nombre similar a los siguientes:</p>
+
+<ul>
+<li>id_dsa.pub</li>
+<li>id_ecdsa.pub</li>
+<li>id_ed25519.pub</li>
+<li>id_rsa.pub</li>
+</ul>
+
+<p>Si no apareciera ningún fichero tendremos que crear una clave pública.</p>
+
+<ul>
+<li><h3 id="crear-una-clave-ssh-para-conectar-con-github-gitlab">Crear una clave ssh para conectar con github/gitlab</h3>
+
+<ul>
+<li><strong>Crear clave ssh</strong></li>
+</ul>
+
+<p>Para crear la clave ssh, para ello introduciremos el comando a continuación substituyendo el e-mail de ejemplo por el e-mail con el que nos hayamos registrado en gihub/gitlab</p>
+
+<pre><code class="language-bash">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com
+</code></pre>
+
+<p>Al ejecutarlo nos aparecerán 3 preguntas:</p>
+
+<ul>
+<li>La primera de ellas nos dará la opción de poner un nombre a nuestra clave ssh, podemos dejarlo en blanco y presionar enter para que tome un nombre por defecto o poner uno a nuestra elección. La clave se guardará en la ruta indicada.</li>
+</ul>
+
+<pre><code class="language-bash">  &gt; Enter a file in which to save the key (/home/you/.ssh/id_rsa): 
+</code></pre>
+
+<ul>
+<li>La segunda y tercera pregunta nos dará la opción de configurar una contraseña para nuestra clave ssh. Esto servirá para que cada vez que se vaya a usar nuestra clave ssh nos salga un mensaje de aviso para poder poner esa contraseña que hemos configurado.</li>
+</ul>
+
+<p>Puede que quizá no queramos que se nos esté pidiendo ninguna contraseña cada vez que tengamos que hacer uso de la clave ssh, para ello simplemente dejándolo en blanco y presionando enter en ambos casos será suficiente.</p>
+
+<pre><code class="language-bash">  &gt; Enter passphrase (empty for no passphrase): [Type a passphrase]
+  &gt; Enter same passphrase again: [Type passphrase again]
+</code></pre>
+
+<ul>
+<li><strong>Añadir clave ssh al ssh-agent</strong></li>
+</ul>
+
+<p>Una vez que tenemos creada la clave ssh, tendremos que añadir la clave que queremos utilizar al ssh-agen. Para ello primeramente lo iniciaremos en segundo plano con el siguiente comando:</p>
+
+<pre><code class="language-bash">eval &quot;$(ssh-agent -s)&quot;
+</code></pre>
+
+<p>Una vez arrancado en segundo plano añadiremos nuestra clave ssh privada al ssh-agent. Si has creado tu clave con un nombre diferente, o si estás añadiendo una clave ya existente con un nombre diferente, reemplaza id_rsa en el comando por el nombre de tu clave privada.</p>
+
+<p>Add your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_rsa in the command with the name of your private key file.</p>
+
+<pre><code class="language-bash">ssh-add ~/.ssh/id_rsa
+</code></pre>
+
+<p>Una vez hecho esto ya podremos proceder a añadirla en github/gitlab en la configuración del perfil de usuario, en el apartado SSH. Para ello tendremos que copiar la clave ssh que hemos creado para incluirla en nuestro listado de claves ssh de github/gitlab.</p>
+
+<ul>
+<li><strong>Copiar clave pública en el portapapeles</strong></li>
+</ul>
+
+<p>Para copiar la clave pública podremos hacerlo abriendo el fichero en un editor de textos y copiándola o mediante la herramienta xclip:</p>
+
+<ul>
+<li>Instalación de xclip:</li>
+</ul>
+
+<pre><code class="language-bash">  sudo apt-get install xclip
+</code></pre>
+
+<ul>
+<li>Copiar la clave pública con xclip</li>
+</ul>
+
+<p>En caso de que nuestra clave pública tenga un nombre diferente tendremos que substituirlo en el comando.</p>
+
+<pre><code class="language-bash">  xclip -sel clip &lt; ~/.ssh/id_rsa.pub
+</code></pre></li>
+</ul>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/learningcat/3_git/" title="Git"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/learningcat/4_django/" title="Django" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/learningcat/js/clipboard.min.js?1577021525"></script>
+    <script src="/learningcat/js/perfect-scrollbar.min.js?1577021525"></script>
+    <script src="/learningcat/js/perfect-scrollbar.jquery.min.js?1577021525"></script>
+    <script src="/learningcat/js/jquery.sticky.js?1577021525"></script>
+    <script src="/learningcat/js/featherlight.min.js?1577021525"></script>
+    <script src="/learningcat/js/html5shiv-printshiv.min.js?1577021525"></script>
+    <script src="/learningcat/js/highlight.pack.js?1577021525"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/learningcat/js/modernizr.custom.71422.js?1577021525"></script>
+    <script src="/learningcat/js/learn.js?1577021525"></script>
+    <script src="/learningcat/js/hugo-learn.js?1577021525"></script>
+
+    <link href="/learningcat/mermaid/mermaid.css?1577021525" type="text/css" rel="stylesheet" />
+    <script src="/learningcat/mermaid/mermaid.js?1577021525"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

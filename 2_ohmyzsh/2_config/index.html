@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.39" />
+    <meta name="description" content="Documentation about languages and tools for kairos project">
+<meta name="author" content="Alfonso Madrid">
+
+    <link rel="icon" href="/learningcat/images/favicon.png" type="image/png">
+
+    <title>Configuración :: Learning Cat</title>
+
+    
+    <link href="/learningcat/css/nucleus.css?1577021525" rel="stylesheet">
+    <link href="/learningcat/css/fontawesome-all.min.css?1577021525" rel="stylesheet">
+    <link href="/learningcat/css/hybrid.css?1577021525" rel="stylesheet">
+    <link href="/learningcat/css/featherlight.min.css?1577021525" rel="stylesheet">
+    <link href="/learningcat/css/perfect-scrollbar.min.css?1577021525" rel="stylesheet">
+    <link href="/learningcat/css/auto-complete.css?1577021525" rel="stylesheet">
+    <link href="/learningcat/css/theme.css?1577021525" rel="stylesheet">
+    <link href="/learningcat/css/hugo-theme.css?1577021525" rel="stylesheet">
+    
+      <link href="/learningcat/css/theme-blue.css?1577021525" rel="stylesheet">
+    
+
+    <script src="/learningcat/js/jquery-2.x.min.js?1577021525"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/learningcat/2_ohmyzsh/2_config/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+<a id="logo" href="/learningcat">
+  <img src="/learningcat/images/learningcatcenter.png">
+</a>  
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/learningcat/js/lunr.min.js?1577021525"></script>
+<script type="text/javascript" src="/learningcat/js/auto-complete.js?1577021525"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/arensis.github.io\/learningcat";
+    
+</script>
+<script type="text/javascript" src="/learningcat/js/search.js?1577021525"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/1_python/" title="Python" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/learningcat/1_python/">
+          <i class='fab fa-python'></i> Python
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/1_python/1_install-run/" title="Instalar y ejecutar" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/learningcat/1_python/1_install-run/">
+          Instalar y ejecutar
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/1_python/2_variables/" title="Variables" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/learningcat/1_python/2_variables/">
+          Variables
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/2_ohmyzsh/" title="Oh My Zsh!" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/learningcat/2_ohmyzsh/">
+          <i class='fas fa-terminal'></i> Oh My Zsh!
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/2_ohmyzsh/1_install/" title="Instalación de ZSH y OhMyZsh!" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/learningcat/2_ohmyzsh/1_install/">
+          Instalación de ZSH y OhMyZsh!
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/2_ohmyzsh/2_config/" title="Configuración" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/learningcat/2_ohmyzsh/2_config/">
+          Configuración
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/3_git/" title="Git" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/learningcat/3_git/">
+          <i class='fas fa-code-branch'></i> Git
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/3_git/1_install/" title="Instalar y configurar" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/learningcat/3_git/1_install/">
+          Instalar y configurar
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/learningcat/4_django/" title="Django" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/learningcat/4_django/">
+          <i class='fas fa-tools'></i> Django
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/learningcat/'>Learning cat web site</a> > <a href='/learningcat/2_ohmyzsh/'>Oh My Zsh!</a> > Configuración
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#fichero-de-configuración">Fichero de configuración</a>
+<ul>
+<li>
+<ul>
+<li><a href="#añadir-temas">Añadir temas</a></li>
+<li><a href="#añadir-plugins">Añadir plugins</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Configuración
+            </h1>
+          
+
+        
+
+
+
+
+	
+
+<h2 id="fichero-de-configuración">Fichero de configuración</h2>
+
+<p>La configuración del framework se puede cambiar editando el archivo de configuración, se puede editar con un editor de texto por consola como nano:</p>
+
+<pre><code class="language-bash">nano ~/.zshrc
+</code></pre>
+
+<p>En este fichero hay diversas opciones para configurar, esto se puede realizar cambiando el valor de algún parámetro o descomentando un parámetro que actualmente esta deshabilitado para que tenga efecto.</p>
+
+<p>Algunos de los parámetros que podemos modificar para personalizar el aspecto de la consola y ciertos comandos de utilidad son los siguientes:</p>
+
+<h4 id="añadir-temas">Añadir temas</h4>
+
+<p>Los temas te proporcionan ayudas visuales en la consola, como el nombre de la rama en git, si hay cambios sin commitear etc..</p>
+
+<p>Hay una infinidad de temas, en la documentación del framework dispones de un amplio listado con capturas de pantalla:</p>
+
+<p><i class='fab fa-github' style="font-size: 1.1em"></i> <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes">https://github.com/robbyrussell/oh-my-zsh/wiki/Themes</a></p>
+
+<p>El tema que viene configurado por defecto es <code>robbyrussell</code>, para poder cambiarlo hay que editar el fichero de configuración hay que cambiar el valor del siguiente parámetro por el nombre del nuevo tema elegido entre comillas dobles:</p>
+
+<pre><code class="language-bash">ZSH_THEME=&quot;robbyrussell&quot;
+</code></pre>
+
+<h4 id="añadir-plugins">Añadir plugins</h4>
+
+<p>Los pluggins proporcionan ayudas en la consola, como el plugin de git, en la propia documentación del framework ya hay amplio listado de plugins disponibles:</p>
+
+<p><i class='fab fa-github' style="font-size: 1.1em"></i> <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins">https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins</a></p>
+
+<p>También puedes consultar el mismo listado en la carpeta del framework en la que están instalados:</p>
+
+<p>Por defecto viene habilitado el plugin de git, sin embargo, si se quisieran añadir más plugins basta con añadirlos al listado en el archivo de configuración.</p>
+
+<p>Vamos a ver un ejemplo con el plugin <code>chucknorris</code>. Para ello necesitamos instalar primero fortune, que es una aplicación que al ejecutarla muestra una frase aleatoria, y también cowsay, una aplicación que dibuja una vaca mostrando una frase en el bocadillo.</p>
+
+<pre><code class="language-bash">#instalación de fortune
+sudo apt-get install fortune-mod
+
+#instalación de cowsay
+sudo apt-get install cowsay
+</code></pre>
+
+<p>Ahora vamos a habilitar el plugin en la configuración del framework editando el fichero y modificando el parámetro plugins añadiendo el nombre del plugin que queremos habilitar separado con  un espacio de los otros plugins del listado:</p>
+
+<pre><code class="language-bash">plugins=(git chucknorris)
+</code></pre>
+
+<p>Cerraremos y abriremos la consola para aplicar todos los cambios y vermos si nos ha funcionado utilizando los comandos del plugin:</p>
+
+<pre><code class="language-bash">#Chiste aleatorio de Chuck Norris
+chuck
+
+#Chiste aletaorio de Chuck Norris con una vaca
+chuck_cow
+</code></pre>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/learningcat/2_ohmyzsh/1_install/" title="Instalación de ZSH y OhMyZsh!"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/learningcat/3_git/" title="Git" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/learningcat/js/clipboard.min.js?1577021525"></script>
+    <script src="/learningcat/js/perfect-scrollbar.min.js?1577021525"></script>
+    <script src="/learningcat/js/perfect-scrollbar.jquery.min.js?1577021525"></script>
+    <script src="/learningcat/js/jquery.sticky.js?1577021525"></script>
+    <script src="/learningcat/js/featherlight.min.js?1577021525"></script>
+    <script src="/learningcat/js/html5shiv-printshiv.min.js?1577021525"></script>
+    <script src="/learningcat/js/highlight.pack.js?1577021525"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/learningcat/js/modernizr.custom.71422.js?1577021525"></script>
+    <script src="/learningcat/js/learn.js?1577021525"></script>
+    <script src="/learningcat/js/hugo-learn.js?1577021525"></script>
+
+    <link href="/learningcat/mermaid/mermaid.css?1577021525" type="text/css" rel="stylesheet" />
+    <script src="/learningcat/mermaid/mermaid.js?1577021525"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

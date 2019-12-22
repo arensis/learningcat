@@ -1,0 +1,85 @@
+[
+{
+	"uri": "https://arensis.github.io/learningcat/2_ohmyzsh/1_install/",
+	"title": "Instalación de ZSH y OhMyZsh!",
+	"tags": [],
+	"description": "",
+	"content": " Instalación de la consola zsh sudo apt install zsh  Comprueba si está correctamente instalada:\nzsh --version  Cambia la consola por defecto del terminal a zsh:\nchsh -s $(which zsh)  Para que se apliquen los cambios tendrás que cerrar sesión y volver a iniciar sesión\nInstalación de OhMyZsh sudo apt-get install git-core  sh -c \u0026quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\u0026quot;  "
+},
+{
+	"uri": "https://arensis.github.io/learningcat/3_git/1_install/",
+	"title": "Instalar y configurar",
+	"tags": [],
+	"description": "",
+	"content": " Instalar Git sudo apt install git-all  Comprobar la versión de Git instalada git --version  Configuración  ### Mostrar la configuración actual  git config --list   ### Identidad  Una vez realizada la instalación, hay que configurar la identidad. La identidad consta de un nombre y un e-mail, esta información servirá para identificar quién ha sido el autor de una acción realizada con git (commit, merge, revert\u0026hellip;).\nPara poder utilizar git es necesario añadir esta información, de lo contrario no nos dejará realizar acciones de escritura.\n Configurar el nombre\ngit config --global user.name \u0026quot;John Doe\u0026quot;  Configurar el e-mail\ngit config --global user.email johndoe@example.com  Editor de texto por defecto  También podemos configurar el editor que se abrirá cuando git requiera de editar o añadir algún mensaje. Por defecto, el editor de texto que git usará si no se ha configurado ninguno es el editor de texto por defecto del sistema.\n Configurar editor de texto\ngit config --global core.editor emacs   Configuración para github/gitlab para conectar por ssh Para que podamos realizar acciones (commits, merge, reverts\u0026hellip;) sobre un repositorio en el que se nos han otorgado permisos podremos hacerlo de dos maneras, o por usuario y contraseña (teniendo que introducir el usuario y contraseña cada vez que queramos ejecutar una acción sobre él), o bien por ssh. Al hacerlo por ssh cada vez que queramos ejecutar una acción leerá nuestra clave ssh para darnos acceso de manera automática.\nPara ello primero tenemos que tener una clave ssh pública en nuestro equipo, para comprobarlo tendremos que listar los ficheros que se encuentran en el directorio ~/.ssh con el siguiente comando:\n ### Comprobar si existen claves ssh ya creadas  ls -al ~/.ssh  Si ya hubiera alguna clave creada aparecería un listado de archivos, normalente los ficheros suelen tener un nombre similar a los siguientes:\n id_dsa.pub id_ecdsa.pub id_ed25519.pub id_rsa.pub  Si no apareciera ningún fichero tendremos que crear una clave pública.\n Crear una clave ssh para conectar con github/gitlab  Crear clave ssh  Para crear la clave ssh, para ello introduciremos el comando a continuación substituyendo el e-mail de ejemplo por el e-mail con el que nos hayamos registrado en gihub/gitlab\nssh-keygen -t rsa -b 4096 -C \u0026quot;your_email@example.com  Al ejecutarlo nos aparecerán 3 preguntas:\n La primera de ellas nos dará la opción de poner un nombre a nuestra clave ssh, podemos dejarlo en blanco y presionar enter para que tome un nombre por defecto o poner uno a nuestra elección. La clave se guardará en la ruta indicada.  \u0026gt; Enter a file in which to save the key (/home/you/.ssh/id_rsa):   La segunda y tercera pregunta nos dará la opción de configurar una contraseña para nuestra clave ssh. Esto servirá para que cada vez que se vaya a usar nuestra clave ssh nos salga un mensaje de aviso para poder poner esa contraseña que hemos configurado.  Puede que quizá no queramos que se nos esté pidiendo ninguna contraseña cada vez que tengamos que hacer uso de la clave ssh, para ello simplemente dejándolo en blanco y presionando enter en ambos casos será suficiente.\n\u0026gt; Enter passphrase (empty for no passphrase): [Type a passphrase] \u0026gt; Enter same passphrase again: [Type passphrase again]   Añadir clave ssh al ssh-agent  Una vez que tenemos creada la clave ssh, tendremos que añadir la clave que queremos utilizar al ssh-agen. Para ello primeramente lo iniciaremos en segundo plano con el siguiente comando:\neval \u0026quot;$(ssh-agent -s)\u0026quot;  Una vez arrancado en segundo plano añadiremos nuestra clave ssh privada al ssh-agent. Si has creado tu clave con un nombre diferente, o si estás añadiendo una clave ya existente con un nombre diferente, reemplaza id_rsa en el comando por el nombre de tu clave privada.\nAdd your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_rsa in the command with the name of your private key file.\nssh-add ~/.ssh/id_rsa  Una vez hecho esto ya podremos proceder a añadirla en github/gitlab en la configuración del perfil de usuario, en el apartado SSH. Para ello tendremos que copiar la clave ssh que hemos creado para incluirla en nuestro listado de claves ssh de github/gitlab.\n Copiar clave pública en el portapapeles  Para copiar la clave pública podremos hacerlo abriendo el fichero en un editor de textos y copiándola o mediante la herramienta xclip:\n Instalación de xclip:  sudo apt-get install xclip   Copiar la clave pública con xclip  En caso de que nuestra clave pública tenga un nombre diferente tendremos que substituirlo en el comando.\nxclip -sel clip \u0026lt; ~/.ssh/id_rsa.pub   "
+},
+{
+	"uri": "https://arensis.github.io/learningcat/1_python/1_install-run/",
+	"title": "Instalar y ejecutar",
+	"tags": [],
+	"description": "",
+	"content": " Instalar Python sudo apt-get update sudo apt-get install python3.6  Comprobar versión de Python instalada python3.6 -V   *En este caso la versión base que instalamos es la 3.6, por ello el comando para ejecutar será python3.6, pero dentro de la 3.6 tiene versiones, por defecto se instala la última versión estable disponible*\n Ejecutar un fichero Python en un terminal Los ficheros python tienen extensión *.py para ejecutar la aplicación que contiene tendrá que hacerse con el comando python3.6 seguido del fichero. (Tendrá que ejecutarse en la ruta donde se encuentre el fichero)\npython3.6 Ejemplo.py  Consola de Python En el terminal podemos ejecutar una consola de python para poder hacer pruebas con código directamente.\n Abrir la consola de python en un terminal:  python3.6   Ejecutar comando de ejemplo en consola  println(\u0026quot;Hola mundo\u0026quot;)   Salir o cerrar la consola de python  exit()  "
+},
+{
+	"uri": "https://arensis.github.io/learningcat/1_python/",
+	"title": "Python",
+	"tags": [],
+	"description": "",
+	"content": " Entorno y lenguaje Python En este capítulo se hablará sobre cómo instalar y ejecutar python en un sistema unix, así como un manual sobre el lenguaje.\n  Web oficial: https://www.python.org/  "
+},
+{
+	"uri": "https://arensis.github.io/learningcat/2_ohmyzsh/2_config/",
+	"title": "Configuración",
+	"tags": [],
+	"description": "",
+	"content": " Fichero de configuración La configuración del framework se puede cambiar editando el archivo de configuración, se puede editar con un editor de texto por consola como nano:\nnano ~/.zshrc  En este fichero hay diversas opciones para configurar, esto se puede realizar cambiando el valor de algún parámetro o descomentando un parámetro que actualmente esta deshabilitado para que tenga efecto.\nAlgunos de los parámetros que podemos modificar para personalizar el aspecto de la consola y ciertos comandos de utilidad son los siguientes:\nAñadir temas Los temas te proporcionan ayudas visuales en la consola, como el nombre de la rama en git, si hay cambios sin commitear etc..\nHay una infinidad de temas, en la documentación del framework dispones de un amplio listado con capturas de pantalla:\n https://github.com/robbyrussell/oh-my-zsh/wiki/Themes\nEl tema que viene configurado por defecto es robbyrussell, para poder cambiarlo hay que editar el fichero de configuración hay que cambiar el valor del siguiente parámetro por el nombre del nuevo tema elegido entre comillas dobles:\nZSH_THEME=\u0026quot;robbyrussell\u0026quot;  Añadir plugins Los pluggins proporcionan ayudas en la consola, como el plugin de git, en la propia documentación del framework ya hay amplio listado de plugins disponibles:\n https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins\nTambién puedes consultar el mismo listado en la carpeta del framework en la que están instalados:\nPor defecto viene habilitado el plugin de git, sin embargo, si se quisieran añadir más plugins basta con añadirlos al listado en el archivo de configuración.\nVamos a ver un ejemplo con el plugin chucknorris. Para ello necesitamos instalar primero fortune, que es una aplicación que al ejecutarla muestra una frase aleatoria, y también cowsay, una aplicación que dibuja una vaca mostrando una frase en el bocadillo.\n#instalación de fortune sudo apt-get install fortune-mod #instalación de cowsay sudo apt-get install cowsay  Ahora vamos a habilitar el plugin en la configuración del framework editando el fichero y modificando el parámetro plugins añadiendo el nombre del plugin que queremos habilitar separado con un espacio de los otros plugins del listado:\nplugins=(git chucknorris)  Cerraremos y abriremos la consola para aplicar todos los cambios y vermos si nos ha funcionado utilizando los comandos del plugin:\n#Chiste aleatorio de Chuck Norris chuck #Chiste aletaorio de Chuck Norris con una vaca chuck_cow  "
+},
+{
+	"uri": "https://arensis.github.io/learningcat/2_ohmyzsh/",
+	"title": "Oh My Zsh!",
+	"tags": [],
+	"description": "",
+	"content": " Instalación, plugins y temas Oh My Zsh! En este capítulo veremos como instalar un framework para la consola con diversas utilidades.\n  Web oficial: https://ohmyz.sh/  "
+},
+{
+	"uri": "https://arensis.github.io/learningcat/1_python/2_variables/",
+	"title": "Variables",
+	"tags": [],
+	"description": "",
+	"content": " Variables en Python  Sintaxis\n Los nombres de las variables en python tienen que empezar por una letra o bien un guión bajo. Los nombres de las variables son case sensitive por tanto una variable con nombre Numero es diferente a una variable con nombre numero Como convención en programación los nombres de métodos o variables suelen escribirse con el tipo de escritura camel case, la primera letara de cada palabra que conforme el nombre de la variable empezará con mayúscula (y por norma general la primera letra del nombre de la variable será en minúscula).\n Ejemplo:\n  variablePrimaria\nnombreDePila\n Asignación de valor\n  Para que una variable exista hay que asignarle un valor. Este valor puede ser nulo, o bien tener un valor de un tipo de dato determinado. Esta asignación se puede realizar de manera individual o múltiple\n Asignación individual\nvariable = 1  Asignación múltiple\n#Asignación de valores diferentes a diferentes variables variable1, variable2, variable3 = 1, 2.1, \u0026quot;Texto\u0026quot; #Asignación del mismo valor a múltiples variables variable1 = variable2 = variable3 = True  Alcance\n Las variables en Python son locales por defecto, es decir, las variables definidas en el bloque de código de una función sólo tienen existencia dentro de la misma. Además, las variables existentes fuera de una función no son visibles dentro de la misma.  Tipo de variable: Globales\n Si fuera necesario, se puede convertir una variable local en global, para poder indicar en una función que vamos a utilizar una variable global tenemos que declararla explícitamente con la sentencia global dentro de la función.\n Ejemplo:\n  variable_global = True def start(): global variable_global print \u0026quot;El valor de variable_global es:\u0026quot;, variable_global variable_global = not variable_global print \u0026quot;Ahora el valor de variable_global es:\u0026quot;, variable_global  Tipo de variable: Constantes\n Las constantes son colocadas dentro de módulos Python que no pueden ser cambiados. Por convención los nombre de las constantes se suelen expresar en mayúsculas y cada palabra separada por un guión bajo.\n Ejemplo:\n  CAMEL_CASE\nVARIABLE_1\n Tipos de dato\n Ejemplo:  valorNulo = None numeroEnteroInt = 1 cadena = \u0026quot;Hola\u0026quot; flotante = 1.2 booleano = True numeroEnteroLong = 1L numeroComplejo = 3.14j numeroComplejo = 2.1 + 7.8j   "
+},
+{
+	"uri": "https://arensis.github.io/learningcat/3_git/",
+	"title": "Git",
+	"tags": [],
+	"description": "",
+	"content": " Instalación, herramientas y comandos Git En esta sección podremos ver cómo instalar git, algunas herramientas de utilidad y comandos.\n  Web oficial: https://git-scm.com/  "
+},
+{
+	"uri": "https://arensis.github.io/learningcat/4_django/",
+	"title": "Django",
+	"tags": [],
+	"description": "",
+	"content": " Framework para Python Django En este capitulo se hablará sobre cómo crear un proyecto con Django, además de un manual sobre el uso del mismo.\n  Web oficial: https://www.djangoproject.com/  "
+},
+{
+	"uri": "https://arensis.github.io/learningcat/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://arensis.github.io/learningcat/",
+	"title": "Learning cat web site",
+	"tags": [],
+	"description": "",
+	"content": " Learning Cat web site Apuntes e información relacionadas con el proyecto Kairos\nKairos pretende ser un proyecto Arduino de una estación meteorológica completa, el backend analizará los datos recogidos por la estación, guardando un historico de los resultados y exponiéndolos mediante un API REST.\n "
+},
+{
+	"uri": "https://arensis.github.io/learningcat/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
