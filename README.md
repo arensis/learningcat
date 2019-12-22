@@ -4,6 +4,25 @@ Página web dedicada a añadir apuntes sobre lenguajes, frameworks, herramientas
 
 Construida con **HUGO** utilizando ficheros **Markdown** y alojada con **GitHub Pages**
 
+## Submodulo del template de HUGO
+
+El template de HUGO es necesario tanto para arrancar el servidor en local como para desplegar ya que dispone de toda la organización del contenido y estilos de la web.
+El templete se ha añadido como un submodulo de git, por tanto para poder arrancar el servidor y desplegar es necesario haberlo inicializado y actualizado cuando se clonó el repositorio.
+
+En caso de encontrar en el arranque / despliegue errores sobre el template, tratar de inicializar y actualizar el submodulo de git.
+
+- Inicializar el submodulo
+
+  ```console
+  git submodule init
+  ```
+
+- Actualizar el submodulo
+
+  ```console
+  git submodule update
+  ```
+
 ## Arrancar en local
 
 ```console
