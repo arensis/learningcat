@@ -35,10 +35,6 @@
   </url>
   
   <url>
-    <loc>https://www.learningcat.tk/4_django/</loc>
-  </url>
-  
-  <url>
     <loc>https://www.learningcat.tk/categories/</loc>
     <priority>0</priority>
   </url>

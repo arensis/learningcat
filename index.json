@@ -56,13 +56,6 @@
 	"content": " Instalación, herramientas y comandos Git En esta sección podremos ver cómo instalar git, algunas herramientas de utilidad y comandos.\n  Web oficial: https://git-scm.com/  "
 },
 {
-	"uri": "https://www.learningcat.tk/4_django/",
-	"title": "Django",
-	"tags": [],
-	"description": "",
-	"content": " Framework para Python Django En este capitulo se hablará sobre cómo crear un proyecto con Django, además de un manual sobre el uso del mismo.\n  Web oficial: https://www.djangoproject.com/  "
-},
-{
 	"uri": "https://www.learningcat.tk/categories/",
 	"title": "Categories",
 	"tags": [],
