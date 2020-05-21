@@ -3,49 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.learningcat.tk/2_ohmyzsh/1_install/</loc>
+    <loc>https://learningcat.tk/2_ohmyzsh/1_install/</loc>
   </url>
   
   <url>
-    <loc>https://www.learningcat.tk/3_git/1_install/</loc>
+    <loc>https://learningcat.tk/3_git/1_install/</loc>
   </url>
   
   <url>
-    <loc>https://www.learningcat.tk/1_python/1_install-run/</loc>
+    <loc>https://learningcat.tk/1_python/1_install-run/</loc>
   </url>
   
   <url>
-    <loc>https://www.learningcat.tk/1_python/</loc>
+    <loc>https://learningcat.tk/1_python/</loc>
   </url>
   
   <url>
-    <loc>https://www.learningcat.tk/2_ohmyzsh/2_config/</loc>
+    <loc>https://learningcat.tk/2_ohmyzsh/2_config/</loc>
   </url>
   
   <url>
-    <loc>https://www.learningcat.tk/2_ohmyzsh/</loc>
+    <loc>https://learningcat.tk/2_ohmyzsh/</loc>
   </url>
   
   <url>
-    <loc>https://www.learningcat.tk/1_python/2_variables/</loc>
+    <loc>https://learningcat.tk/1_python/2_variables/</loc>
   </url>
   
   <url>
-    <loc>https://www.learningcat.tk/3_git/</loc>
+    <loc>https://learningcat.tk/3_git/</loc>
   </url>
   
   <url>
-    <loc>https://www.learningcat.tk/categories/</loc>
-    <priority>0</priority>
+    <loc>https://learningcat.tk/categories/</loc>
   </url>
   
   <url>
-    <loc>https://www.learningcat.tk/</loc>
+    <loc>https://learningcat.tk/</loc>
   </url>
   
   <url>
-    <loc>https://www.learningcat.tk/tags/</loc>
-    <priority>0</priority>
+    <loc>https://learningcat.tk/tags/</loc>
   </url>
   
 </urlset>
