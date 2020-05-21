@@ -1,5 +1,5 @@
 theme = "hugo-theme-learn"
-baseURL = "https://www.learningcat.tk"
+baseURL = "https://learningcat.tk"
 languageCode = "en-us"
 title = "Learning Cat"
 
