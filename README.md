@@ -76,8 +76,6 @@ Los nombres de las carpetas no soportan camelCase, las palabras que conformen en
 
 - ### Página principal de la sección
 
-  - Página principal de la sección (otorga el título a la sección)
-
   - Se creará un fichero llamado `_index.md` dentro de la nueva carpeta de la sección que será su portada.
 
   - Template de ejemplo:
