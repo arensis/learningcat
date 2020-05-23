@@ -17,12 +17,20 @@ En caso de encontrar en el arranque / despliegue errores sobre el template, trat
   git submodule init
   ```
 
-- Actualizar el submodulo
+- Actualizar el submodulo para que se posicione en el commit configurado del repositorio
 
   ```console
   git submodule update
   ```
 
+- Actualizar el commit al que apunta el submodulo
+
+  1. Entrar en la carpeta que contiene el submodulo `themes/hugo-theme-lear`
+
+  2. Situarse en la rama que tiene como último commit el que se quiere que apunte el submodulo o directamente en el commit al que se quiere que apunte el submodulo
+
+  3. Volver a la raíz del proyecto para indexar y hacer commit de los cambios
+  
 ## Arrancar en local
 
 ```console
