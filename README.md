@@ -1,13 +1,13 @@
 # Learning Cat web site
 
-Página web dedicada a añadir apuntes sobre lenguajes, frameworks, herramientas... utilizadas en el proyecto Kairos.
+Página web dedicada a añadir apuntes sobre lenguajes, frameworks, herramientas...
 
-Construida con **HUGO** utilizando ficheros **Markdown** y alojada con **GitHub Pages**
+Construida con **HUGO** y **HUGO-LEARN-TEMPLATE** utilizando ficheros **Markdown** y alojada con **GitHub Pages**
 
 ## Submodulo del template de HUGO
 
 El template de HUGO es necesario tanto para arrancar el servidor en local como para desplegar ya que dispone de toda la organización del contenido y estilos de la web.
-El templete se ha añadido como un submodulo de git, por tanto para poder arrancar el servidor y desplegar es necesario haberlo inicializado y actualizado cuando se clonó el repositorio.
+El template se ha añadido como un submodulo de git, por tanto para poder arrancar el servidor y desplegar es necesario haberlo inicializado y actualizado.
 
 En caso de encontrar en el arranque / despliegue errores sobre el template, tratar de inicializar y actualizar el submodulo de git.
 
@@ -23,23 +23,25 @@ En caso de encontrar en el arranque / despliegue errores sobre el template, trat
   git submodule update
   ```
 
-- Actualizar el commit al que apunta el submodulo
+- Cambiar el commit al que apunta el submodulo en el repositorio
 
   1. Entrar en la carpeta que contiene el submodulo `themes/hugo-theme-lear`
 
   2. Situarse en la rama que tiene como último commit el que se quiere que apunte el submodulo o directamente en el commit al que se quiere que apunte el submodulo
 
   3. Volver a la raíz del proyecto para indexar y hacer commit de los cambios
-  
+
 ## Arrancar en local
+
+El comando a continuación levantará un servidor web que permite cambios en caliente.
 
 ```console
 hugo server
 ```
 
-## Generar el fuente
+## Renderizar
 
-El comando a continuación generará el fuente de la web dentro de la carpeta `public`
+El comando a continuación ejecutará el renderizado del proyecto, que es una conversión del código fuente en una página web estática con ficheros html, css, multimedia, etc ..., y se volcará el resultado en la carpeta  `public` del repositorio.
 
 ```console
 hugo
@@ -47,28 +49,25 @@ hugo
 
 ## Actualizaciones en el proyecto
 
-El proyecto está dividido en dos ramas:
+El proyecto está dividido en dos ramas, lo que nos permite tener por separado el código fuente del renderizado con históricos diferentes:
 
-- **Rama master**: Rama general del proyecto que contiene el código fuente del proyecto. Se hará commit de todos los cambios que se produzcan en el código fuente y que se quieran preservar.
+- **Rama master**: Rama principal del proyecto que contiene el código fuente. Se hará commit de todos los cambios que se produzcan y que se quieran preservar. La carpeta public está ignorada para no incluir el renderizado dentro del repositorio.
 
-- **Rama gh-pages**: Esta rama contiene el código generado por el comando `hugo` en la carpeta `public`, dicho código es una conversión del código fuente en una página web estática con ficheros html, css, multimedia, etc ... La carpeta public está ignorada para publicarse con la rama master del código fuente, lo que permite tener el código fuente separado de la página web generada. De esta manera mantenemos por separado el histórico, lo que permite poder realizar cambios en el fuente agenos a la construcción de web.
-
-GitHub Pages está configurado para que tome la rama `gh-pages` como el fuente de publicación de la página web.
+- **Rama gh-pages**: Rama de despliegue y publicación del proyecto. Contiene el código renderizado por el comando `hugo`, está configurada con GitHub Pages como fuente de publicación de la página web, por tanto todos los cambios que se hagan en esta rama se publicarán automáticamente por github pages.
 
 - ### Desplegar
 
-    Al tener por separado el código fuente del código generado para publicar, si necesitamos desplegar algún cambio que hayamos realizado en la rama `master` podremos ejecutar el siguiente comando:
+    Para desplegar podremos ejecutar un script sh que se encuentra en la raíz el proyecto añadiéndo el mensaje que queremos que aparezca como mensaje del commit:
 
     ```console
     sh deploy.sh "Mensaje informativo de los cambios"
     ```
 
-Este comando ejecuta un script que se encuenra en la raíz del fuente y sigue la siguient secuencia:
-
- - Comprueba que no haya cambios sin commitear en la rama master, en cuyo caso mostrará un mensaje indicándolo y no continuará con el script. 
- - Borrará la carpeta public si existe alguna en el proyecto, y volverá a generarla con el comando hugo.
- - Hará commit de los camabios en la rama `gh-pages`con el mensaje que le hemos pasado en el comando.
- - Hará push de los cambios quedando ya desplegados en github.
+    Este comando sigue la siguient secuencia:
+      - Comprueba que no haya cambios sin commitear en la rama master, en cuyo caso mostrará un mensaje indicándolo y no continuará con el script.
+      - Borrará la carpeta public si existe alguna en el proyecto, y volverá a generarla con el comando hugo.
+      - Hará commit de los camabios en la rama `gh-pages`con el mensaje que le hemos pasado en el comando.
+      - Hará push de los cambios quedando ya desplegados en github.
 
 ## Añadir nuevas secciones
 
@@ -79,7 +78,7 @@ Los nombres de las carpetas no soportan camelCase, las palabras que conformen en
 
   - Página principal de la sección (otorga el título a la sección)
 
-  - Se creará un fichero llamado _index.md dentro de la nueva carpeta de la sección que será su portada.
+  - Se creará un fichero llamado `_index.md` dentro de la nueva carpeta de la sección que será su portada.
 
   - Template de ejemplo:
 
@@ -100,14 +99,15 @@ Los nombres de las carpetas no soportan camelCase, las palabras que conformen en
     > ##### <i class='fab fa-python'></i>  Web oficial:  https://www.python.org/
     ```
 
-  - El orden en el que se coloca la sección viene dado por el parámetro `weight` que figura en la portada
+  - El orden en el que se coloca la sección viene dado por el parámetro `weight` que figura en la portada, deberá ser un número único entre todas las secciones, y éstas se ordenaran ascendentemente según éste valor.
 
-  - El parámetro `pre` sirve para añadir un elemento html justo antes del título.
+  - El parámetro `pre` sirve para añadir un elemento html justo antes del título, pero ésto sólo se verá representado en la barra de navegación.
 
   - El parámetro `title` es el que da nombre a la sección, aparecerá como título dentro del contenido de la misma y también en la barra de navegación.
 
-- #### Subsecciones
-  - Se creará una carpeta que contendrá el archivo de la subsección. Dicho archivo tendrá que tener el nombre _index.md
+- ### Subsecciones
+
+  - Se creará una carpeta que contendrá el archivo de la subsección. Dicho archivo tendrá que tener el nombre `_index.md`
   - Se tendrá que especificar en el template:
     - El título de la sección `title`: Dará nombre a la subsección en el menú y también proporcionará el título en el contenido de la misma.
     - El orden que ocupará dentro de la sección padre `weight`
@@ -134,14 +134,12 @@ Los nombres de las carpetas no soportan camelCase, las palabras que conformen en
 
 El árbol de carpetas y ficheros para las nuevas secciones quedaría así:
 
-    content
-    ├── _index.md //Fichero de portada principal de la web</span>
+  content
+    ├── _index.md //Fichero de portada principal de la web
     └── [seccion-padre] //Carpeta de sección-padre Ej: python
-        ├── _index.md //Fichero de portada de sección-padre
-        └── [seccion-hija] //Carpeta de sección-hija Ej: install-run
-            └── _index.md //Fichero de contenido de sección-hija
-
-    
+           ├── index.md //Fichero de portada de sección-padre
+           └── [seccion-hija] //Carpeta de sección-hija Ej: install-run
+                  └── index.md //Fichero de contenido de sección-hija
 
 Se pueden hacer divisiones más profundas en el árbol siguiendo el mismo procedimiento.
 

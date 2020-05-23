@@ -4,8 +4,8 @@ title: "Learning cat web site"
 
 # Learning Cat web site
 
-<center>Apuntes e información relacionadas con el proyecto Kairos</center>
+<center>Apuntes e información sobre diversas tecnologías, lenguajes y herramientas</center>
 
 {{% notice note %}}
-Kairos pretende ser un proyecto Arduino de una estación meteorológica completa, el backend analizará los datos recogidos por la estación, guardando un historico de los resultados y exponiéndolos mediante un API REST.
+Es un compendio de notas, guías u otra información que podría ser útil consultar. Los apuntes de las herramientas, lenguajes o tecnologías que aquí se muestran no están elegidas por popularidad, si no porque podrían ser útiles en un proyecto que actualmente está en una fase muy temprana, se irán añadiendo nuevas secciones en función de lo que se vaya utilizando en dicho proyecto si fueran de interés.</br></br> **Alfonso Madrid** [https://github.com/arensis]
 {{% /notice %}}
