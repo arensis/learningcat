@@ -132,12 +132,12 @@ Los nombres de las carpetas no soportan camelCase, las palabras que conformen en
 
 El árbol de carpetas y ficheros para las nuevas secciones quedaría así:
 
-  content
-    ├── _index.md //Fichero de portada principal de la web
-    └── [seccion-padre] //Carpeta de sección-padre Ej: python
-           ├── index.md //Fichero de portada de sección-padre
-           └── [seccion-hija] //Carpeta de sección-hija Ej: install-run
-                  └── index.md //Fichero de contenido de sección-hija
+ content
+  ├── _index.md //Fichero de portada principal de la web
+  └── [seccion-padre] //Carpeta de sección-padre Ej: python
+        ├── index.md //Fichero de portada de sección-padre
+        └── [seccion-hija] //Carpeta de sección-hija Ej: install-run
+              └── index.md //Fichero de contenido de sección-hija
 
 Se pueden hacer divisiones más profundas en el árbol siguiendo el mismo procedimiento.
 
