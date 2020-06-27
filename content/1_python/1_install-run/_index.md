@@ -1,6 +1,7 @@
 +++
 title = "Instalar y ejecutar"
 weight = 1
+pre = "<i class='fa fa-folder-open' aria-hidden='true'></i> "
 +++
 
 ## Instalar Python

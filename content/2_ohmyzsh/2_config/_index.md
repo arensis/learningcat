@@ -1,6 +1,7 @@
 +++
 title = "Configuración"
 weight = 2
+pre = "<i class='fa fa-wrench' aria-hidden='true'></i> "
 +++
 
 ## Fichero de configuración

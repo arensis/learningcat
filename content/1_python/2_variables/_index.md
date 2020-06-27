@@ -1,6 +1,7 @@
 +++
 title = "Variables"
 weight = 2
+pre = "<i class='fa fa-file-code' aria-hidden='true'></i> "
 +++
 
 ## Variables en Python

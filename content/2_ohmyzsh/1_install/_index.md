@@ -1,6 +1,7 @@
 +++
 title = "Instalación de ZSH y OhMyZsh!"
 weight = 1
+pre = "<i class='fa fa-folder-open' aria-hidden='true'></i> "
 +++
 
 ## Instalación de la consola zsh

@@ -1,6 +1,7 @@
 +++
-title = "Configurar accesso ssh a GitHub/GitLab"
+title = "Configurar accesso ssh"
 weight = 2
+pre = "<i class='fa fa-wrench' aria-hidden='true'></i>&nbsp;"
 +++
 
 Para que podamos realizar modificaciones sobre un repositorio en el que se nos han otorgado permisos podremos hacerlo de dos maneras, o por usuario y contraseña (teniendo que introducir el usuario y contraseña cada vez que queramos subir algún cambio), o bien por ssh.
