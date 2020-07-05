@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Tags :: Learning Cat</title>
+    <title>Descarga e instalación del IDE :: Learning Cat</title>
 
     
     <link href="/css/nucleus.css?1593964829" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/tags/">
+  <body class="" data-url="/4_arduino/1_arduinoide/">
     <nav id="sidebar" class="">
 
 
@@ -345,7 +345,7 @@
   
     
     <li data-nav-id="/4_arduino/" title="Arduino" class="dd-item 
-        
+        parent
         
         
         ">
@@ -374,8 +374,8 @@
   
     
     <li data-nav-id="/4_arduino/1_arduinoide/" title="Descarga e instalación del IDE" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/4_arduino/1_arduinoide/">
@@ -506,7 +506,13 @@
             
           
           
-            <a href='/'>Learning cat web site</a> > Tags
+            
+            
+          
+          
+            <a href='/'>Learning cat web site</a> > <a href='/4_arduino/'>Arduino</a> > Descarga e instalación del IDE
+          
+        
           
         
           
@@ -517,7 +523,17 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#descarga">Descarga</a></li>
+    <li><a href="#instalación">Instalación</a>
+      <ul>
+        <li><a href="#windows--macosx">Windows / MacOSX</a></li>
+        <li><a href="#linux">Linux</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -533,9 +549,7 @@
           
             <h1>
               
-                taxonomy ::
-              
-              Tags
+              Descarga e instalación del IDE
             </h1>
           
 
@@ -543,11 +557,37 @@
 
 
 
-
-
+	<h2 id="descarga">Descarga</h2>
+<p>El IDE de arduino con el que podremos desarrollar el código, compilarlo y cargarlo en la placa de desarrollo se puede descargar gratuitamente desde la web de Arudino:</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="https://www.arduino.cc/en/Main/Software">https://www.arduino.cc/en/Main/Software</a></p>
+<h2 id="instalación">Instalación</h2>
 <ul>
-	
+<li>
+<h3 id="windows--macosx">Windows / MacOSX</h3>
+<p>Si eres usuario de Windows o MacOSX descargarás un ejecutable (exe o dmg respectivamente) con un asistente sencillo de instalación</p>
+</li>
+<li>
+<h3 id="linux">Linux</h3>
+<ul>
+<li>
+<h4 id="descompresión-de-los-ficheros-del-ide">Descompresión de los ficheros del IDE</h4>
+<p>Si por el contrario usas linux descargarás un tar.xz, para descomprimir los archivos podrás hacerlo haciendo doble click sobre él para abrirlo con el gestor de achivos o bien haciendo uso del terminal ejecutando dentro de la carpeta en la que se encuentre el fichero descargado el siguiente comando:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tar -xvf arduino-1.8.13-linux64.tar.xz
+</code></pre></div></li>
+<li>
+<h4 id="instalación-del-ide">Instalación del IDE</h4>
+<p>Una vez descomprimido podremos hacer uso del archivo install.sh para efectuar la instalación, para ello, nos introducimos en la carpeta que acaba de crearse al descomprimir el fichero y ejecutamos el siguiente comando:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sh install.sh
+</code></pre></div><p>Es posible que requieras premisos de administrador para que el script tenga acceso a los directorios en los que requiere copiar los archivos de la aplicación, en caso de ser así deberíamos de ejecutarlo con permisos de administrador:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo sh install.sh
+</code></pre></div><p>Una vez instalado ya podremos abrir el IDE de Arduino y empezar a desarrollar.</p>
+</li>
 </ul>
+</li>
+</ul>
+
+
+
 
 
 <footer class=" footline" >
@@ -738,6 +778,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -752,6 +793,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -768,6 +810,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -810,8 +855,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/4_arduino/" title="Arduino"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/1_python/" title="Python" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/4_arduino/1_nodemcuboard/" title="Placa NodeMCU ESP8266" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

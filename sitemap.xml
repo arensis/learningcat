@@ -1,6 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://learningcat.tk/4_arduino/1_nodemcuboard/1_configboard/</loc>
+  </url>
+  
+  <url>
+    <loc>https://learningcat.tk/4_arduino/1_arduinoide/</loc>
+  </url>
   
   <url>
     <loc>https://learningcat.tk/2_ohmyzsh/1_install/</loc>
@@ -12,6 +20,10 @@
   
   <url>
     <loc>https://learningcat.tk/1_python/1_install-run/</loc>
+  </url>
+  
+  <url>
+    <loc>https://learningcat.tk/4_arduino/1_nodemcuboard/</loc>
   </url>
   
   <url>
@@ -36,6 +48,10 @@
   
   <url>
     <loc>https://learningcat.tk/3_git/</loc>
+  </url>
+  
+  <url>
+    <loc>https://learningcat.tk/4_arduino/</loc>
   </url>
   
   <url>
