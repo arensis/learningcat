@@ -1,69 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://learningcat.tk/4_arduino/1_nodemcuboard/1_configboard/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://learningcat.tk/4_arduino/1_arduinoide/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://learningcat.tk/2_ohmyzsh/1_install/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://learningcat.tk/3_git/1_install/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://learningcat.tk/1_python/1_install-run/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://learningcat.tk/4_arduino/1_nodemcuboard/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://learningcat.tk/1_python/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://learningcat.tk/2_ohmyzsh/2_config/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://learningcat.tk/3_git/2_configssh/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://learningcat.tk/2_ohmyzsh/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://learningcat.tk/1_python/2_variables/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://learningcat.tk/3_git/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://learningcat.tk/4_arduino/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://learningcat.tk/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://learningcat.tk/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://learningcat.tk/tags/</loc>
   </url>
-  
 </urlset>

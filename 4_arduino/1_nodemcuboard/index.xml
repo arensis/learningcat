@@ -5,10 +5,6 @@
     <link>https://learningcat.tk/4_arduino/1_nodemcuboard/</link>
     <description>Recent content in Placa NodeMCU ESP8266 on Learning Cat</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://learningcat.tk/4_arduino/1_nodemcuboard/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://learningcat.tk/4_arduino/1_nodemcuboard/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
