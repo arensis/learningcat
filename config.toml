@@ -1,6 +1,6 @@
 theme = "hugo-theme-learn"
-baseURL = "https://learningcat.tk"
-languageCode = "en-us"
+baseURL = "https://arensis.github.io/learningcat/"
+languageCode = "es-es"
 title = "Learning Cat"
 
 [params]
