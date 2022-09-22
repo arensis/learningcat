@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.103.1" />
+    <meta name="description" content="Documentation about languages and tools for kairos project">
+<meta name="author" content="Alfonso Madrid">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Variables :: Learning Cat</title>
+
+    
+    <link href="/css/nucleus.css?1663845204" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1663845204" rel="stylesheet">
+    <link href="/css/hybrid.css?1663845204" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1663845204" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1663845204" rel="stylesheet">
+    <link href="/css/auto-complete.css?1663845204" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1663845204" rel="stylesheet">
+    <link href="/css/theme.css?1663845204" rel="stylesheet">
+    <link href="/css/tabs.css?1663845204" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1663845204" rel="stylesheet">
+    
+    <link href="/css/theme-blue.css?1663845204" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1663845204"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/1_python/2_variables/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+<a id="logo" href="/">
+  <img src="/images/learningcatcenter.png">
+</a>  
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1663845204"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1663845204"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/learningcat.alfonsomadrid.net";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1663845204"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1_python/" title="Python" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/1_python/">
+          <i class='fab fa-python'></i> Python
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1_python/1_install-run/" title="Instalar y ejecutar" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1_python/1_install-run/">
+          <i class='fa fa-folder-open' aria-hidden='true'></i> Instalar y ejecutar
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1_python/2_variables/" title="Variables" class="dd-item
+        
+        active
+        
+        ">
+      <a href="/1_python/2_variables/">
+          <i class='fa fa-file-code' aria-hidden='true'></i> Variables
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2_ohmyzsh/" title="Oh My Zsh!" class="dd-item
+        
+        
+        
+        ">
+      <a href="/2_ohmyzsh/">
+          <i class='fas fa-terminal'></i> Oh My Zsh!
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2_ohmyzsh/1_install/" title="Instalación de ZSH y OhMyZsh!" class="dd-item
+        
+        
+        
+        ">
+      <a href="/2_ohmyzsh/1_install/">
+          <i class='fa fa-folder-open' aria-hidden='true'></i> Instalación de ZSH y OhMyZsh!
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2_ohmyzsh/2_config/" title="Configuración" class="dd-item
+        
+        
+        
+        ">
+      <a href="/2_ohmyzsh/2_config/">
+          <i class='fa fa-wrench' aria-hidden='true'></i> Configuración
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3_git/" title="Git" class="dd-item
+        
+        
+        
+        ">
+      <a href="/3_git/">
+          <i class='fas fa-code-branch'></i> Git
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3_git/1_install/" title="Instalar y configurar" class="dd-item
+        
+        
+        
+        ">
+      <a href="/3_git/1_install/">
+          <i class='fa fa-folder-open' aria-hidden='true'></i> Instalar y configurar
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3_git/2_configssh/" title="Configurar accesso ssh" class="dd-item
+        
+        
+        
+        ">
+      <a href="/3_git/2_configssh/">
+          <i class='fa fa-wrench' aria-hidden='true'></i>&nbsp;Configurar accesso ssh
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4_arduino/" title="Arduino" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4_arduino/">
+          <i class='fa fa-cog' aria-hidden='true'></i> Arduino
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4_arduino/1_arduinoide/" title="Descarga e instalación del IDE" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4_arduino/1_arduinoide/">
+          <i class='fa fa-folder-open' aria-hidden='true'></i> Descarga e instalación del IDE
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4_arduino/1_nodemcuboard/" title="Placa NodeMCU ESP8266" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4_arduino/1_nodemcuboard/">
+          <i class='fa fa-microchip' aria-hidden='true'></i> Placa NodeMCU ESP8266
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4_arduino/1_nodemcuboard/1_configboard/" title="Configurar placa" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4_arduino/1_nodemcuboard/1_configboard/">
+          <i class='fa fa-wrench' aria-hidden='true'></i> Configurar placa
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Learning cat web site</a> > <a href='/1_python/'>Python</a> > Variables
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#variables-en-python">Variables en Python</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Variables
+            </h1>
+          
+
+        
+
+
+
+	<h2 id="variables-en-python">Variables en Python</h2>
+<ul>
+<li>
+<p><strong>Sintaxis</strong></p>
+<ul>
+<li>
+<p>Los nombres de las variables en python tienen que empezar por una letra o bien un guión bajo.</p>
+</li>
+<li>
+<p>Los nombres de las variables son case sensitive por tanto una variable con nombre Numero es diferente a una variable con nombre numero</p>
+</li>
+<li>
+<p>Como convención en programación los nombres de métodos o variables suelen escribirse con el tipo de escritura camel case, la primera letara de cada palabra que conforme el nombre de la variable empezará con mayúscula (y por norma general la primera letra del nombre de la variable será en minúscula).</p>
+<ul>
+<li>
+<p>Ejemplo:</p>
+<p><code>variablePrimaria</code></p>
+<p><code>nombreDePila</code></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Asignación de valor</strong></p>
+<p>Para que una variable exista hay que asignarle un valor. Este valor puede ser nulo, o bien tener un valor de un tipo de dato determinado.
+Esta asignación se puede realizar de manera individual o múltiple</p>
+<ul>
+<li>
+<p>Asignación individual</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>variable <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Asignación múltiple</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#Asignación de valores diferentes a diferentes variables</span>
+</span></span><span style="display:flex;"><span>variable1, variable2, variable3 <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2.1</span>, <span style="color:#e6db74">&#34;Texto&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Asignación del mismo valor a múltiples variables</span>
+</span></span><span style="display:flex;"><span>variable1 <span style="color:#f92672">=</span> variable2 <span style="color:#f92672">=</span> variable3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Alcance</strong></p>
+<ul>
+<li>Las variables en Python son locales por defecto, es decir, las variables definidas en el bloque de código de una función sólo tienen existencia dentro de la misma. Además, las variables existentes fuera de una función no son visibles dentro de la misma.</li>
+</ul>
+</li>
+<li>
+<p><strong>Tipo de variable:</strong> <em>Globales</em></p>
+<ul>
+<li>
+<p>Si fuera necesario, se puede convertir una variable local en global, para poder indicar en una función que vamos a utilizar una variable global tenemos que declararla explícitamente con la sentencia <code>global</code> dentro de la función.</p>
+<ul>
+<li>
+<p>Ejemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>variable_global <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">start</span>():
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">global</span> variable_global
+</span></span><span style="display:flex;"><span>print <span style="color:#e6db74">&#34;El valor de variable_global es:&#34;</span>, variable_global
+</span></span><span style="display:flex;"><span>variable_global <span style="color:#f92672">=</span> <span style="color:#f92672">not</span> variable_global
+</span></span><span style="display:flex;"><span>print <span style="color:#e6db74">&#34;Ahora el valor de variable_global es:&#34;</span>, variable_global
+</span></span></code></pre></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Tipo de variable:</strong> <em>Constantes</em></p>
+<ul>
+<li>
+<p>Las constantes son colocadas dentro de módulos Python que no pueden ser cambiados.</p>
+</li>
+<li>
+<p>Por convención los nombre de las constantes se suelen expresar en mayúsculas y cada palabra separada por un guión bajo.</p>
+<ul>
+<li>
+<p>Ejemplo:</p>
+<p><code>CAMEL_CASE</code></p>
+<p><code>VARIABLE_1</code></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Tipos de dato</strong></p>
+<ul>
+<li>
+<p>Ejemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>valorNulo <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>numeroEnteroInt <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>cadena <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hola&#34;</span>
+</span></span><span style="display:flex;"><span>flotante <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.2</span>
+</span></span><span style="display:flex;"><span>booleano <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>numeroEnteroLong <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>L
+</span></span><span style="display:flex;"><span>numeroComplejo <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.14</span>j
+</span></span><span style="display:flex;"><span>numeroComplejo <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.1</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">7.8</span>j
+</span></span></code></pre></div></li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/1_python/1_install-run/" title="Instalar y ejecutar"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/2_ohmyzsh/" title="Oh My Zsh!" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1663845204"></script>
+    <script src="/js/perfect-scrollbar.min.js?1663845204"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1663845204"></script>
+    <script src="/js/jquery.sticky.js?1663845204"></script>
+    <script src="/js/featherlight.min.js?1663845204"></script>
+    <script src="/js/highlight.pack.js?1663845204"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1663845204"></script>
+    <script src="/js/learn.js?1663845204"></script>
+    <script src="/js/hugo-learn.js?1663845204"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1663845204"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
